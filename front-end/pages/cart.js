@@ -1,3 +1,20 @@
+
+// CartCard.js
+
+// import Cart from './Cart';
+
+// const CartCard = () => {
+//   return (
+//     <div>
+//       <h2>Cart Card</h2>
+//       <Cart />
+//     </div>
+//   );
+// };
+
+// export default CartCard;
+
+
 <div className="overflow-hidden bg-[#090e0b] flex flex-col justify-end gap-px w-full h-[1535px]">
   <div className="flex flex-row gap-6 items-center mb-12 mx-16">
     <div className="text-5xl font-['Inter'] font-bold text-white mr-24 w-32 shrink-0">

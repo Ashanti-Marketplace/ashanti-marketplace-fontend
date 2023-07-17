@@ -1,4 +1,9 @@
-<div className="overflow-hidden bg-[#090e0b] flex flex-col justify-end pt-16 gap-px w-full">
+import React from 'react'
+import withAuth from '../utils/withAuth'
+
+const profileview = () => {
+  return (
+    <div className="overflow-hidden bg-[#090e0b] flex flex-col justify-end pt-16 gap-px w-full">
   <div className="flex flex-row gap-6 items-center mb-12 mx-16">
     <div className="text-5xl font-['Inter'] font-bold text-white mr-24 w-32 shrink-0">
       Log0
@@ -478,3 +483,9 @@
     </div>
   </div>
 </div>
+
+  )
+}
+
+export default withAuth(profileview);
+

@@ -8,8 +8,8 @@ export default function Login(){
  
     // Get data from the form.
     const data = {
-      first: event.target.first.value,
-      last: event.target.last.value,
+      email: event.target.email.value,
+      pwd: event.target.password.value,
     }
  
     // Send the data to the server in JSON format.
@@ -55,14 +55,14 @@ export default function Login(){
       Let’s get you back on track as an artlover/artist
     </div>
 
-    // We pass the event to the handleSubmit function on submit.
+    /* We pass the event to the handleSubmit function on submit.*/
     
       <div className="border-solid border-white flex flex-col justify-center mb-6 h-12 shrink-0 items-start border-t-0 border-b border-x-0">
-        <input className="text-2xl font-['Inter'] font-medium text-white w-16" type="text" id="first" name="first" required  placeholder="Email"/>
+        <input className="text-2xl font-['Inter'] font-medium text-white w-16" type="email" id="email" name="email"  placeholder="Email" required/>
       </div>
       
       <div className="border-solid border-white flex flex-col justify-center mb-8 h-12 shrink-0 items-start border-t-0 border-b border-x-0">
-       <input className="text-2xl font-['Inter'] font-medium text-white w-[113px]"type="text" id="last" name="last" required  placeholder="Password"/>
+       <input className="text-2xl font-['Inter'] font-medium text-white w-[113px]"type="password" id="password" name="password" placeholder="Password" required/>
       </div>
       
       <div className="bg-[#b38af1] flex flex-col justify-center h-12 shrink-0 items-center mb-6 mr-px rounded-lg">
@@ -74,18 +74,18 @@ export default function Login(){
     </div>
 
     <div className="border-solid border-[#2f4736] flex flex-row justify-center gap-2 h-12 shrink-0 items-center mb-2 mr-px border rounded-lg">
-      <div className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-[210px] shrink-0">
+      <a href='./signup' className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-[210px] shrink-0">
         Login with Google
-      </div>
+      </a>
       <img
         src="https://file.rendit.io/n/XOKcZzv0fFr9J9cajLLI.svg"
         className="min-h-0 min-w-0 w-8 shrink-0"
       />
     </div>
     <div className="border-solid border-[#2f4736] flex flex-row justify-center gap-2 h-12 shrink-0 items-center mb-4 mr-px border rounded-lg">
-      <div className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-1/2">
+      <a className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-1/2" href="google.com">
         Login with Facebook
-      </div>
+      </a>
       <img
         src="https://file.rendit.io/n/RL0opZFFsdclP9NCTjfB.svg"
         className="min-h-0 min-w-0 w-8 shrink-0"

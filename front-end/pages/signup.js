@@ -3,8 +3,49 @@ import Link from "next/link"
 
 
 export default function signup () {
+
+  const handleSubmit = async (event) => {
+    // Stop the form from submitting and refreshing the page.
+    event.preventDefault()
+ 
+    // Get data from the form.
+    const data = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      pwd: event.target.password.value
+    }
+
+    console.log(data);
+ 
+    // Send the data to the server in JSON format.
+    const JSONdata = JSON.stringify(data)
+  console.log(JSONdata);
+    // API endpoint where we send form data.
+    const endpoint = '/api/form'
+ 
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: 'POST',
+      // Tell the server we're sending JSON.
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    }
+ 
+    // Send the form data to our forms API on Vercel and get a response.
+    const response = await fetch(endpoint, options)
+ 
+    // Get the response data from server as JSON.
+    // If server returns the name submitted, that means the form works.
+    const result = await response.json()
+    alert(`Is this your full name: ${result.data}`)
+  }
+  
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
           <div>
         <div className="overflow-hidden bg-[#090e0b] flex flex-row gap-16 w-full items-center">
   <img
@@ -22,24 +63,20 @@ export default function signup () {
       Sign up and collect African arts from all over the world.
     </div>
     <div className="border-solid border-white flex flex-col justify-center h-12 shrink-0 items-start mb-4 mr-20 border-t-0 border-b border-x-0">
-      <div className="text-2xl font-['Inter'] font-medium text-white w-16">
-        Name
-      </div>
+      <input  type="text"  name=" name" id="name" className="text-2xl font-['Inter'] font-medium text-white w-16" placeholder="Name" required/>
+      
     </div>
     <div className="border-solid border-white flex flex-col justify-center h-12 shrink-0 items-start mb-4 mr-20 border-t-0 border-b border-x-0">
-      <div className="text-2xl font-['Inter'] font-medium text-white w-16">
-        Email
-      </div>
+    <input  type="email"  name=" email" id="email" className="text-2xl font-['Inter'] font-medium text-white w-16" placeholder="E-mail" required/>
     </div>
     <div className="border-solid border-white flex flex-col justify-center h-12 shrink-0 items-start mb-4 mr-20 border-t-0 border-b border-x-0">
-      <div className="text-2xl font-['Inter'] font-medium text-white w-[113px]">
-        Password
-      </div>
+      
+      <input  type="password"  name="password" id="password" className="text-2xl font-['Inter'] font-medium text-white w-[113px]" placeholder="Password" required/>
     </div>
     <div className="bg-[#b38af1] flex flex-col justify-center h-12 shrink-0 items-center mb-4 ml-px mr-20 rounded-lg">
-      <div className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-48">
+      <button className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-48" type="submit">
         Create Account
-      </div>
+      </button>
     </div>
     <div className="font-['Inter'] font-bold text-white self-start ml-64 w-5">
       Or

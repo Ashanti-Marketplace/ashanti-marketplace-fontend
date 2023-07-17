@@ -1,3 +1,24 @@
+
+
+
+// // CartCard.js
+
+// import Cart from './Cart';
+
+// const CartCard = () => {
+//   return (
+//     <div>
+//       <h2>Cart Card</h2>
+//       <Cart />
+//     </div>
+//   );
+// };
+
+// export default CartCard;
+
+
+
+
 <div className="overflow-hidden bg-white flex flex-col justify-end gap-6 w-full h-[618px] p-5">
   <div className="whitespace-nowrap text-3xl font-['Ubuntu'] leading-[24px] ml-12 mr-16">
     (2) ITEMS IN YOUR CART
