@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
     
     const excludedPages = ['/'] //specify pages/routes that dont require auth
 
-    const authCode =localStorage.getItem('auth'); //retrieve auth code from local storage
+    const authCode =localStorage.getItem(); //retrieve auth code from local storage
 
     //redirect to login page if not authentivated and the route requires authentication
     if(!authCode && !excludedPages.includes(router.pathname)){
