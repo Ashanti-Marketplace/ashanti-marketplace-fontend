@@ -7,8 +7,8 @@ const withAuth = (WrappedComponent)=> {
         const router = useRouter();
 
         //Retrieve the authorization code from local storage
-        const authCode = localStorage.getItems('authCode');
-                       memor
+        const authCode = localStorage.getItems('isLoggedIn');
+                       
         useEffect(()=>{
             //redirect to login page if the user is not authenticated
             if(!authCode && router.pathname !== 'login'&& 'signup'){

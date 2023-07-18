@@ -5,8 +5,8 @@ export default function Login(){
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
- 
-    // Get data from the form.
+    try {
+       // Get data from the form.
     const data = {
       email: event.target.email.value,
       pwd: event.target.password.value,
@@ -37,6 +37,21 @@ export default function Login(){
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
     alert(`Is this your full name: ${result.data}`)
+    if (result.ok) {
+      // If login is successful, store authentication status in local storage
+      localStorage.setItem('isLoggedIn', true);
+
+      // Redirect to authenticated route or show success message
+      // You can use Next.js router or conditional rendering based on the stored value
+    } else {
+      // Handle login error, show error message, etc.
+      
+  } 
+  }catch (error) {
+      console.log(error.response);
+    }
+ 
+   
   }
   
 

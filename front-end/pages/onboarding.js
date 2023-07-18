@@ -1,3 +1,11 @@
+
+import React from 'react'
+
+
+export default function onboarding() {
+
+  return(
+
 <div className="overflow-hidden bg-white flex flex-row gap-16 w-full items-center">
   <div className="overflow-hidden bg-[#101812] flex flex-col justify-between gap-8 w-1/2 px-8">
     <div className="flex flex-row ml-6 gap-12 items-center">
@@ -75,3 +83,5 @@
     </div>
   </div>
 </div>
+)
+}
