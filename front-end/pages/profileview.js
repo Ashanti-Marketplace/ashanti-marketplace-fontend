@@ -487,5 +487,6 @@ const profileview = () => {
   )
 }
 
-export default withAuth(profileview);
+// export default withAuth(profileview);
+export default profileview;
 

@@ -1,7 +1,17 @@
 import Link from "next/link"
 
+import { useRouter } from 'next/router';
+import {  useUser } from '../utils/contexts/userContext';
+import { useState } from "react";
+
+
 export default function Login(){
+
+  const { setUser,setLoggedIn } = useUser();
+   
+  const router = useRouter();
      // Handles the submit event on form submit.
+    
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
@@ -40,9 +50,25 @@ export default function Login(){
     if (result.ok) {
       // If login is successful, store authentication status in local storage
       localStorage.setItem('isLoggedIn', true);
+ 
+          // Store login status in local storage
+    // localStorage.setItem('loggedIn', JSON.stringify(true));
+
+    // Store login status in local storage
+    // localStorage.setItem('loggedIn', JSON.stringify(true));
+
+
 
       // Redirect to authenticated route or show success message
-      // You can use Next.js router or conditional rendering based on the stored value
+      // Update the user state with server response
+    // If login is successful, update the user state with server response
+ setUser(result.user);
+
+    // Update the login status state
+    setLoggedIn(true);
+
+    // Redirect to products page
+    router.push('/products');
     } else {
       // Handle login error, show error message, etc.
       
@@ -56,6 +82,7 @@ export default function Login(){
   
 
  return(
+  
     <form onSubmit={handleSubmit}>
     
     <div className="overflow-hidden bg-[#090e0b] flex flex-row justify-between pl-16 w-full items-center"></div>
@@ -116,10 +143,7 @@ export default function Login(){
     className="min-h-0 min-w-0"
   />
   
-    
-    </form>
-    
-   
+  </form>
      
     
  

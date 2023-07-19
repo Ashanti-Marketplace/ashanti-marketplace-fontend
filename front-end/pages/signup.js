@@ -1,14 +1,20 @@
 import Link from "next/link"
-
-
+import { useUser } from "../utils/contexts/userContext"
+import { useRouter } from "next/router";
 
 export default function signup () {
+
+  const { setUser,setLoggedIn } = useUser();
+  
+  const router = useRouter();
+     // Handles the submit event on form submit.
 
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
- 
-    // Get data from the form.
+
+    try {
+       // Get data from the form.
     const data = {
       name: event.target.name.value,
       email: event.target.email.value,
@@ -42,8 +48,41 @@ export default function signup () {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
     alert(`Is this your full name: ${result.data}`)
-  }
+    if (result.ok) {
+      
+ 
+          // Store login status in local storage
+    // localStorage.setItem('loggedIn', JSON.stringify(true));
+
+    // Store login status in local storage
+    // localStorage.setItem('loggedIn', JSON.stringify(true));
+
+
+
+      // Redirect to authenticated route or show success message
+      // Update the user state with server response
+    // If login is successful, update the user state with server response
+ setUser(result.user);
+
+    // Update the login status state
+    setLoggedIn(true);
+
+
+    // If login is successful, store authentication status in local storage
+    localStorage.setItem(isLoggedIn);
+
+    // Redirect to products page
+    router.push('/onboarding');
+    } else {
+      // Handle login error, show error message, etc.
+      
+  } 
   
+    } catch (error) {
+      
+    }
+   
+  }  
   return (
     <form onSubmit={handleSubmit}>
           <div>
@@ -110,5 +149,8 @@ export default function signup () {
     </form>
     
   )
+
 }
+
+
 

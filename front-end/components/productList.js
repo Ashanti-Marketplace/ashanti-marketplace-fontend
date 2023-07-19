@@ -6,6 +6,7 @@ import ProductCard from './ProductCard';
 const ProductList = ({ products, cardStyle }) => {
   return (
     <div className="product-container">
+       //       {/* Render product cards */}
       {products.map((product) => (
         <ProductCard key={product.id} product={product} cardStyle={cardStyle} />
       ))}
@@ -14,3 +15,5 @@ const ProductList = ({ products, cardStyle }) => {
 };
 
 export default ProductList;
+
+
