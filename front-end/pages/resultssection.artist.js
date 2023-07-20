@@ -1,485 +1,482 @@
-<div className="overflow-hidden bg-[#090e0b] flex flex-col justify-end pt-16 gap-px w-full">
-  <div className="flex flex-row gap-6 items-center mb-12 mx-16">
-    <div className="text-5xl font-['Inter'] font-bold text-white mr-24 w-32 shrink-0">
-      Log0
-    </div>
-    <div className="border-solid border-[#d9f3dd] flex flex-row justify-between mr-24 w-1/2 h-12 items-center pl-8 pr-6 border rounded-lg">
-      <div className="whitespace-nowrap text-xl font-['Inter'] text-[#d5dad7] w-56 shrink-0">
-        Search for afrikan vibes
-      </div>
-      <img
-        src="https://file.rendit.io/n/qZNByHhoCty4CuAxDV9e.svg"
-        className="min-h-0 min-w-0 w-8 shrink-0"
-      />
-    </div>
-    <div className="text-lg font-['Inter'] text-[#d5dad7] mr-8 w-8 shrink-0">
-      Buy
-    </div>
-    <div className="text-lg font-['Inter'] text-[#d5dad7] mr-24 w-8 shrink-0">
-      Sell
-    </div>
-    <img
-      src="https://file.rendit.io/n/7AQB1H18NG3j9WBxVS0l.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/yUTdTTzg9q3NbjLaCxV1.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-  </div>
-  <div className="border-solid border-[#273b2d] mb-20 h-px shrink-0 border-t border-b-0 border-x-0" />
-  <div className="self-start flex flex-row gap-5 w-1/2 items-center mb-10 ml-16">
-    <img
-      src="https://file.rendit.io/n/ilR9RqzvcaJI0dWh3MXy.png"
-      className="min-h-0 min-w-0 w-20 shrink-0"
-    />
-    <div className="flex flex-col mr-20 gap-2">
-      <div className="whitespace-nowrap text-2xl font-['Ubuntu'] leading-[24px] text-white">
-        Oghenetega Bright
-      </div>
-      <div className="whitespace-nowrap text-xl font-['Inter'] leading-[24px] text-[#748479] mr-12">
-        Artist | Illustrator
-      </div>
-    </div>
-    <div className="bg-[#b38af1] flex flex-col justify-center h-12 items-center rounded-lg">
-      <div className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-1/2 mx-16">
-        Follow work
-      </div>
-    </div>
-  </div>
-  <div className="text-justify text-2xl font-['Inter'] leading-[34px] text-white self-start w-1/2 mb-12 ml-16">
-    {" "}
-    Oghenetega Bright is a contemporary artist hailing from Delta-State, Nigeria.
-    He was born in 1985 into a family of artists and grew up surrounded by creativity
-    and artistic expression. From a young age, Keita knew that she wanted to pursue
-    a career in the arts and began experimenting with different mediums and styles
-    as a child.
-  </div>
-  <div className="border-solid border-[#273b2d] h-px shrink-0 mb-20 mx-16 border-t border-b-0 border-x-0" />
-  <div className="whitespace-nowrap text-5xl font-['Ubuntu'] text-white self-start w-1/2 mb-20 ml-16">
-    Works from OGHENETEGA BRIGHT
-  </div>
-  <div className="flex flex-row gap-5 items-center mb-1 mx-16">
-    <img
-      src="https://file.rendit.io/n/9lYuP8dDk0cEWdgOnLZQ.png"
-      className="min-h-0 min-w-0 mr-px"
-    />
-    <div className="self-start flex flex-col gap-1 items-center">
-      <img
-        src="https://file.rendit.io/n/v1yEYB0FzfoVWlr7lR04.png"
-        className="min-h-0 min-w-0 mb-6"
-      />
-      <div className="self-stretch flex flex-row ml-px gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-1/2">
-          Modern: The future
+import  styles from "../styles/resultsessionartist.module.css";
+const SearchResultSectionartists = () => {
+  return (
+    <div className={styles.searchResultSectionartists}>
+      <div className={styles.logoParent}>
+        <div className={styles.logo}>Logo</div>
+        <div className={styles.marketplaceParent}>
+          <div className={styles.marketplace}>Marketplace</div>
+          <div className={styles.exploreParent}>
+            <div className={styles.explore}>Explore</div>
+            <div className={styles.explore}>Blah</div>
+            <div className={styles.explore}>Blah</div>
+            <div className={styles.explore}>Blah</div>
+          </div>
         </div>
-        <img
-          src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/V5UKg0KiPEWlb0JoPg0W.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-      </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start ml-px w-2/5">
-        N10,000
-      </div>
-    </div>
-    <div className="self-start flex flex-col gap-1 items-center">
-      <img
-        src="https://file.rendit.io/n/AcGCGtWhpKpqUbpo6FeF.png"
-        className="min-h-0 min-w-0 mb-6"
-      />
-      <div className="self-stretch flex flex-row ml-px gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-1/2">
-          Modern: The future
+        <div className={styles.marketplaceGroup}>
+          <div className={styles.marketplace}>Marketplace</div>
+          <div className={styles.exploreParent}>
+            <div className={styles.explore}>Explore</div>
+            <div className={styles.explore}>Blah</div>
+            <div className={styles.explore}>Blah</div>
+            <div className={styles.explore}>Blah</div>
+          </div>
         </div>
-        <img
-          src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/V5UKg0KiPEWlb0JoPg0W.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-      </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start ml-px w-2/5">
-        N10,000
-      </div>
-    </div>
-    <img
-      src="https://file.rendit.io/n/BTTgthGgzfz0pd7bhjjO.png"
-      className="min-h-0 min-w-0"
-    />
-  </div>
-  <div className="flex flex-row gap-4 items-center mb-3 mx-16">
-    <div className="self-end flex flex-col mr-1 gap-1 items-center">
-      <div className="self-stretch flex flex-row gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-1/2">
-          Modern: The future
+        <div className={styles.marketplaceContainer}>
+          <div className={styles.marketplace}>Marketplace</div>
+          <div className={styles.exploreParent}>
+            <div className={styles.explore}>Explore</div>
+            <div className={styles.explore}>Blah</div>
+            <div className={styles.explore}>Blah</div>
+            <div className={styles.explore}>Blah</div>
+          </div>
         </div>
-        <img
-          src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
+        <div className={styles.frameChild} />
+        <div className={styles.div}>@2023</div>
       </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start mb-16 w-2/5">
-        N10,000
-      </div>
-      <img
-        src="https://file.rendit.io/n/tFC2XVGmrMnws8i4qPAV.png"
-        className="min-h-0 min-w-0"
-      />
-    </div>
-    <img
-      src="https://file.rendit.io/n/hlIKKyoHmKUv65OHjTd1.png"
-      className="min-h-0 min-w-0 mr-px"
-    />
-    <img
-      src="https://file.rendit.io/n/v6AcnE0xyH4lSAlIW8th.png"
-      className="min-h-0 min-w-0"
-    />
-    <div className="self-start flex flex-col mt-2 gap-px items-center">
-      <div className="self-stretch flex flex-row gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-1/2">
-          Modern: The future
+      <div className={styles.searchResultSectionartistsChild} />
+      <div className={styles.ellipseParent}>
+        <img className={styles.frameItem} alt="" src="/ellipse-3@2x.png" />
+        <div className={styles.frameWrapper}>
+          <div className={styles.oghenetegaBrightParent}>
+            <div className={styles.oghenetegaBright}>Oghenetega Bright</div>
+            <div className={styles.artistIllustrator}>Artist | Illustrator</div>
+          </div>
         </div>
-        <img
-          src="https://file.rendit.io/n/g9XWPz3YRSngTjHGq1Yx.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/jm6FYNn2nqxCzyVm9grx.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
       </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start mb-16 w-2/5">
-        N10,000
+      <div className={styles.afrikanLoverWrapper}>
+        <div className={styles.marketplace}>Follow work</div>
       </div>
-      <img
-        src="https://file.rendit.io/n/jjD0GNI7JZmiEW079D34.png"
-        className="min-h-0 min-w-0"
-      />
-    </div>
-  </div>
-  <div className="flex flex-row gap-4 items-center mx-16">
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-      className="min-h-0 min-w-0 mb-px w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/g9XWPz3YRSngTjHGq1Yx.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/NTyvndTJAlmctm5PQzjq.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-  </div>
-  <div className="flex flex-row gap-48 items-center mb-20 ml-16 mr-[242px]">
-    <div className="text-3xl font-['Inter'] font-bold text-white w-32 shrink-0 mt-px mr-px">
-      N10,000
-    </div>
-    <div className="text-3xl font-['Inter'] font-bold text-white w-32 shrink-0">
-      N10,000
-    </div>
-    <div className="text-3xl font-['Inter'] font-bold text-white w-32 shrink-0">
-      N10,000
-    </div>
-    <div className="text-3xl font-['Inter'] font-bold text-white w-32 shrink-0">
-      N10,000
-    </div>
-  </div>
-  <div className="flex flex-row gap-4 items-center mb-1 mx-16">
-    <img
-      src="https://file.rendit.io/n/Q8cFHsAfWI7cASgwz2Cd.png"
-      className="min-h-0 min-w-0 mr-px"
-    />
-    <div className="self-start flex flex-col mr-px gap-1 items-center">
-      <img
-        src="https://file.rendit.io/n/BtkweAczDbb0t6huroWG.png"
-        className="min-h-0 min-w-0 mb-3"
-      />
-      <div className="self-stretch flex flex-row gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-1/2">
-          Modern: The future
+      <div className={styles.worksFromOghenetega}>
+        Works from OGHENETEGA BRIGHT
+      </div>
+      <div className={styles.rectangleParent}>
+        <img className={styles.frameInner} alt="" src="/rectangle-52@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
         </div>
-        <img
-          src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
       </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start w-2/5">
-        N10,000
-      </div>
-    </div>
-    <div className="self-start flex flex-col gap-1 items-center">
-      <img
-        src="https://file.rendit.io/n/wan1jYNExeh4Y3TFLo1v.png"
-        className="min-h-0 min-w-0 mb-3"
-      />
-      <div className="self-stretch flex flex-row mr-px gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-1/2">
-          Modern: The future
+      <div className={styles.rectangleGroup}>
+        <img
+          className={styles.rectangleIcon}
+          alt=""
+          src="/rectangle-75@2x.png"
+        />
+        <div className={styles.frameGroup}>
+          <div className={styles.modernTheFutureParent}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline1.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd1.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
         </div>
-        <img
-          src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
       </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white w-2/5">
-        N10,000
-      </div>
-    </div>
-    <img
-      src="https://file.rendit.io/n/EnBoAoIASseo0ifSU6zV.png"
-      className="min-h-0 min-w-0"
-    />
-  </div>
-  <div className="flex flex-row gap-4 items-center mb-3 mx-16">
-    <div className="self-end flex flex-col mr-px gap-1 items-center">
-      <div className="self-stretch flex flex-row gap-4 items-center">
-        <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-16 w-1/2">
-          Modern: The future
+      <div className={styles.rectangleContainer}>
+        <img className={styles.frameChild1} alt="" src="/rectangle-64@2x.png" />
+        <div className={styles.frameContainer}>
+          <div className={styles.modernTheFutureContainer}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline2.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd2.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
         </div>
-        <img
-          src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
-        <img
-          src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
-        />
       </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start mb-16 w-2/5">
-        N10,000
-      </div>
-      <img
-        src="https://file.rendit.io/n/nW7H1GXiqukpcpijJouK.png"
-        className="min-h-0 min-w-0"
-      />
-    </div>
-    <img
-      src="https://file.rendit.io/n/OBpIUtPD98apPmAm3rix.png"
-      className="min-h-0 min-w-0 mr-1"
-    />
-    <img
-      src="https://file.rendit.io/n/2QFtWtFIL3ONuwoAuxI7.png"
-      className="min-h-0 min-w-0"
-    />
-    <div className="self-start flex flex-col mt-2 gap-1 items-center">
-      <div className="self-stretch flex flex-row gap-4 items-center">
-        <div className="whitespace-nowrap text-xl font-['Inter'] text-white mr-8 w-3/5">
-          Modern: The future
+      <div className={styles.frameDiv}>
+        <img className={styles.frameChild1} alt="" src="/rectangle-76@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent1}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline3.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd3.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
         </div>
+      </div>
+      <div className={styles.rectangleParent1}>
         <img
-          src="https://file.rendit.io/n/g9XWPz3YRSngTjHGq1Yx.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
+          className={styles.rectangleIcon}
+          alt=""
+          src="/rectangle-74@2x.png"
         />
+        <div className={styles.frameContainer}>
+          <div className={styles.modernTheFutureContainer}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline4.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd4.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.rectangleParent2}>
         <img
-          src="https://file.rendit.io/n/NTyvndTJAlmctm5PQzjq.svg"
-          className="min-h-0 min-w-0 w-8 shrink-0"
+          className={styles.rectangleIcon}
+          alt=""
+          src="/rectangle-51@2x.png"
         />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline5.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd5.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
       </div>
-      <div className="text-3xl font-['Inter'] font-bold text-white self-start mb-16 w-2/5">
-        N10,000
+      <div className={styles.rectangleParent3}>
+        <img className={styles.frameChild5} alt="" src="/rectangle-73@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent4}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline6.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd6.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
       </div>
-      <img
-        src="https://file.rendit.io/n/nG1Sw5baSefe2Rpl0m2x.png"
-        className="min-h-0 min-w-0"
-      />
-    </div>
-  </div>
-  <div className="flex flex-row gap-3 items-center mx-16">
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0 mb-px mr-1"
-    />
-    <img
-      src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-      className="min-h-0 min-w-0 mr-2 w-8 shrink-0"
-    />
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-16 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-16 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/mQxHOzfqueMWObn1McDq.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/hmRJGVMLZUjjTbhVSERv.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <div className="whitespace-nowrap text-lg font-['Inter'] text-white mr-12 w-40 shrink-0">
-      Modern: The future
-    </div>
-    <img
-      src="https://file.rendit.io/n/g9XWPz3YRSngTjHGq1Yx.svg"
-      className="min-h-0 min-w-0 mr-1 w-8 shrink-0"
-    />
-    <img
-      src="https://file.rendit.io/n/NTyvndTJAlmctm5PQzjq.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-  </div>
-  <div className="flex flex-row gap-48 items-center mb-20 ml-16 mr-[243px]">
-    <div className="text-3xl font-['Inter'] font-bold text-white w-32 shrink-0">
-      N10,000
-    </div>
-    <div className="text-3xl font-['Inter'] font-bold text-white mr-1 w-32 shrink-0">
-      N10,000
-    </div>
-    <div className="text-3xl font-['Inter'] font-bold text-white mr-3 w-32 shrink-0">
-      N10,000
-    </div>
-    <div className="text-3xl font-['Inter'] font-bold text-white w-32 shrink-0">
-      N10,000
-    </div>
-  </div>
-  <div className="self-center flex flex-row mb-20 gap-2 w-3/5 items-center">
-    <img
-      src="https://file.rendit.io/n/yjf6zbgekhPuaZxBM3tF.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-    <div className="text-xl font-['Inter'] text-[#526658] mr-[311px] w-10 shrink-0">
-      Prev
-    </div>
-    <div className="text-xl font-['Inter'] text-white mr-1 w-2 shrink-0">1</div>
-    <div className="text-xl font-['Inter'] text-[#526657] mr-1 w-3 shrink-0">
-      2
-    </div>
-    <div className="text-xl font-['Inter'] text-[#526657] mr-[311px] w-3 shrink-0">
-      3
-    </div>
-    <div className="text-xl font-['Inter'] text-[#d5dad7] w-12 shrink-0">
-      Next
-    </div>
-    <img
-      src="https://file.rendit.io/n/YHBLOFpbmoirVaVP4dW5.svg"
-      className="min-h-0 min-w-0 w-8 shrink-0"
-    />
-  </div>
-  <div className="overflow-hidden bg-[#2a2a2a] flex flex-col justify-end mb-[-28px] gap-3 h-[432px] shrink-0 items-start py-6">
-    <div className="self-stretch flex flex-row gap-5 items-center ml-24 mr-[407px]">
-      <div className="text-3xl font-['Rubik'] font-semibold text-white mr-56 w-20 shrink-0">
-        Logo
+      <div className={styles.rectangleParent4}>
+        <img className={styles.frameChild6} alt="" src="/rectangle-69@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent5}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline7.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd7.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
       </div>
-      <div className="text-3xl font-['Rubik'] font-semibold text-white w-48 shrink-0">
-        Marketplace
+      <div className={styles.rectangleParent5}>
+        <img className={styles.frameChild7} alt="" src="/rectangle-50@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureContainer}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline8.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd8.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
       </div>
-      <div className="text-3xl font-['Rubik'] font-semibold text-white w-48 shrink-0">
-        Marketplace
+      <div className={styles.rectangleParent6}>
+        <img className={styles.frameChild7} alt="" src="/rectangle-65@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureContainer}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline9.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd9.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
       </div>
-      <div className="text-3xl font-['Rubik'] font-semibold text-white w-48 shrink-0">
-        Marketplace
+      <div className={styles.rectangleParent7}>
+        <img className={styles.frameChild7} alt="" src="/rectangle-71@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent8}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline10.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd10.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.rectangleParent8}>
+        <img className={styles.frameChild7} alt="" src="/rectangle-66@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureContainer}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline11.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd11.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.rectangleParent9}>
+        <img
+          className={styles.rectangleIcon}
+          alt=""
+          src="/rectangle-68@2x.png"
+        />
+        <div className={styles.frameContainer}>
+          <div className={styles.modernTheFutureParent}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline12.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd12.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.rectangleParent10}>
+        <img className={styles.frameChild7} alt="" src="/rectangle-72@2x.png" />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent11}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline13.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd13.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.frameParent12}>
+        <div className={styles.log0Parent}>
+          <b className={styles.log0}>Log0</b>
+          <div className={styles.searchForAfrikanVibesParent}>
+            <div className={styles.explore}>Search for afrikan vibes</div>
+            <img
+              className={styles.mdicardsHeartOutlineIcon}
+              alt=""
+              src="/materialsymbolssearchrounded.svg"
+            />
+          </div>
+          <div className={styles.createAccountParent}>
+            <div className={styles.createAccount}>
+              <div className={styles.createAccount1}>Buy</div>
+            </div>
+            <div className={styles.createAccount}>
+              <div className={styles.createAccount1}>Sell</div>
+            </div>
+          </div>
+          <div className={styles.icoutlineShoppingCartParent}>
+            <img
+              className={styles.mdicardsHeartOutlineIcon}
+              alt=""
+              src="/icoutlineshoppingcart.svg"
+            />
+            <img
+              className={styles.mdicardsHeartOutlineIcon}
+              alt=""
+              src="/mdiuseroutline.svg"
+            />
+          </div>
+        </div>
+        <div className={styles.lineDiv} />
+      </div>
+      <div className={styles.oghenetegaBrightIs}>
+        {" "}
+        Oghenetega Bright is a contemporary artist hailing from Delta-State,
+        Nigeria. He was born in 1985 into a family of artists and grew up
+        surrounded by creativity and artistic expression. From a young age,
+        Keita knew that she wanted to pursue a career in the arts and began
+        experimenting with different mediums and styles as a child.
+      </div>
+      <div className={styles.rectangleParent11}>
+        <img
+          className={styles.rectangleIcon}
+          alt=""
+          src="/rectangle-67@2x.png"
+        />
+        <div className={styles.frameParent13}>
+          <div className={styles.modernTheFutureParent}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline14.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd14.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.rectangleParent12}>
+        <img
+          className={styles.rectangleIcon}
+          alt=""
+          src="/rectangle-70@2x.png"
+        />
+        <div className={styles.frameParent}>
+          <div className={styles.modernTheFutureParent13}>
+            <div className={styles.explore}>Modern: The future</div>
+            <div className={styles.mdicardsHeartOutlineParent}>
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/mdicardsheartoutline15.svg"
+              />
+              <img
+                className={styles.mdicardsHeartOutlineIcon}
+                alt=""
+                src="/materialsymbolsadd15.svg"
+              />
+            </div>
+          </div>
+          <b className={styles.n10000}>N10,000</b>
+        </div>
+      </div>
+      <div className={styles.groupDiv}>
+        <div className={styles.materialSymbolskeyboardArroParent}>
+          <img
+            className={styles.mdicardsHeartOutlineIcon}
+            alt=""
+            src="/materialsymbolskeyboardarrowuprounded.svg"
+          />
+          <div className={styles.explore}>Prev</div>
+        </div>
+        <div className={styles.materialSymbolskeyboardArroGroup}>
+          <img
+            className={styles.mdicardsHeartOutlineIcon}
+            alt=""
+            src="/materialsymbolskeyboardarrowuprounded1.svg"
+          />
+          <div className={styles.next}>Next</div>
+        </div>
+        <div className={styles.parent}>
+          <div className={styles.log0}>1</div>
+          <div className={styles.explore}>2</div>
+          <div className={styles.explore}>3</div>
+        </div>
       </div>
     </div>
-    <div className="flex flex-row justify-between ml-[407px] gap-[146px] items-center">
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-16 shrink-0">
-        Explore
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-16 shrink-0">
-        Explore
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-16 shrink-0">
-        Explore
-      </div>
-    </div>
-    <div className="flex flex-row justify-between ml-[407px] gap-[174px] items-center">
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-    </div>
-    <div className="flex flex-row justify-between ml-[407px] gap-[174px] items-center">
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-    </div>
-    <div className="flex flex-row justify-between gap-[174px] items-center mb-16 ml-[407px]">
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-      <div className="text-xl font-['Rubik'] text-[#a9a9a9] w-10 shrink-0">
-        Blah
-      </div>
-    </div>
-    <div className="border-solid border-[#676767] self-stretch mb-4 h-px shrink-0 border-t-2 border-b-0 border-x-0" />
-    <div className="text-2xl font-['Rubik'] text-white self-center w-20">
-      @2023
-    </div>
-  </div>
-</div>
+  );
+};
+
+export default SearchResultSectionartists;

@@ -154,3 +154,57 @@ export default function signup () {
 
 
 
+
+
+// import { useCallback } from "react";
+// import styles from "./index.module.css";
+// const CreateAccount = () => {
+//   const onAlreadyHaveAnClick = useCallback(() => {
+//     // Please sync "Login" to the project
+//   }, []);
+
+//   return (
+//     <div className={styles.createAccount}>
+//       <img className={styles.createAccountChild} alt="" src="/frame-1@2x.png" />
+//       <b className={styles.log0}>Log0</b>
+//       <div className={styles.createAnAccount}>Create an account</div>
+//       <div className={styles.signUpAnd}>
+//         Sign up and collect African arts from all over the world.
+//       </div>
+//       <div className={styles.nameWrapper}>
+//         <div className={styles.name}>Name</div>
+//       </div>
+//       <div className={styles.emailWrapper}>
+//         <div className={styles.name}>Email</div>
+//       </div>
+//       <div className={styles.passwordWrapper}>
+//         <div className={styles.name}>Password</div>
+//       </div>
+//       <div className={styles.afrikanLoverWrapper}>
+//         <div className={styles.afrikanLover}>Create Account</div>
+//       </div>
+//       <div className={styles.afrikanLoverParent}>
+//         <div className={styles.afrikanLover}>Sign up with Google</div>
+//         <img className={styles.mdigoogleIcon} alt="" src="/mdigoogle.svg" />
+//       </div>
+//       <div className={styles.afrikanLoverGroup}>
+//         <div className={styles.afrikanLover}>Sign up with Facebook</div>
+//         <img
+//           className={styles.mdigoogleIcon}
+//           alt=""
+//           src="/icbaselinefacebook.svg"
+//         />
+//       </div>
+//       <div
+//         className={styles.alreadyHaveAnContainer}
+//         onClick={onAlreadyHaveAnClick}
+//       >
+//         <span>{`Already have an account? `}</span>
+//         <b className={styles.login}>Login</b>
+//       </div>
+//       <b className={styles.or}>Or</b>
+//     </div>
+//   );
+// };
+
+// export default CreateAccount;

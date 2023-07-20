@@ -1,0 +1,555 @@
+.logo {
+    position: absolute;
+    top: 85px;
+    left: 89px;
+  }
+  .logo,
+  .marketplace {
+    font-weight: 600;
+  }
+  .explore,
+  .marketplace {
+    position: relative;
+  }
+  .exploreParent,
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+  }
+  .exploreParent {
+    font-size: var(--font-size-xl);
+    color: var(--color-darkgray);
+  }
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+  }
+  .marketplaceContainer,
+  .marketplaceGroup {
+    left: 623px;
+  }
+  .marketplaceContainer {
+    left: 839px;
+  }
+  .frameChild {
+    position: absolute;
+    top: 347.25px;
+    left: -0.75px;
+    border-top: 1.5px solid #676767;
+    box-sizing: border-box;
+    width: 1441.5px;
+    height: 1.5px;
+  }
+  .div,
+  .logoParent {
+    position: absolute;
+    top: 376px;
+    left: 681px;
+    font-size: var(--font-size-5xl);
+  }
+  .logoParent {
+    top: 3013px;
+    left: 0;
+    background-color: #2a2a2a;
+    width: 1440px;
+    height: 432px;
+    overflow: hidden;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-rubik);
+  }
+  .searchResultSectionartistsChild {
+    position: absolute;
+    top: 649.5px;
+    left: 63.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1313px;
+    height: 1px;
+  }
+  .frameItem {
+    position: relative;
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+  }
+  .artistIllustrator,
+  .oghenetegaBright {
+    position: relative;
+    line-height: 24px;
+  }
+  .artistIllustrator {
+    font-size: var(--font-size-xl);
+    font-family: var(--font-inter);
+    color: var(--brand-color-7);
+  }
+  .frameWrapper,
+  .oghenetegaBrightParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .oghenetegaBrightParent {
+    gap: 9px;
+  }
+  .frameWrapper {
+    padding: 10px;
+  }
+  .afrikanLoverWrapper,
+  .ellipseParent {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size-5xl);
+  }
+  .ellipseParent {
+    top: 264px;
+    left: 64px;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .afrikanLoverWrapper {
+    top: 281px;
+    left: 492px;
+    border-radius: var(--br-5xs);
+    background-color: #b38af1;
+    width: 267px;
+    height: 54px;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .worksFromOghenetega {
+    position: absolute;
+    top: 738px;
+    left: 60px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .frameInner {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 268px;
+    object-fit: cover;
+  }
+  .mdicardsHeartOutlineIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .mdicardsHeartOutlineParent,
+  .modernTheFutureParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .modernTheFutureParent {
+    align-items: center;
+    gap: var(--gap-48xl);
+  }
+  .n10000 {
+    position: relative;
+    font-size: var(--font-size-13xl);
+  }
+  .frameParent,
+  .rectangleParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .frameParent {
+    align-items: flex-start;
+    gap: var(--gap-10xs);
+  }
+  .rectangleParent {
+    position: absolute;
+    top: 873px;
+    left: 729px;
+    align-items: flex-end;
+    gap: 31px;
+  }
+  .rectangleIcon {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 263px;
+    object-fit: cover;
+  }
+  .frameGroup,
+  .rectangleGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-10xs);
+  }
+  .rectangleGroup {
+    position: absolute;
+    top: 1891px;
+    left: 730px;
+    align-items: flex-start;
+    gap: var(--gap-base);
+  }
+  .frameChild1 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 415px;
+    object-fit: cover;
+  }
+  .frameContainer,
+  .modernTheFutureContainer,
+  .rectangleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-49xl);
+  }
+  .frameContainer,
+  .rectangleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-11xs);
+  }
+  .rectangleContainer {
+    position: absolute;
+    top: 873px;
+    left: 1061px;
+    gap: var(--gap-mid);
+  }
+  .modernTheFutureParent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .frameDiv {
+    top: 1891px;
+    left: 1061px;
+    align-items: flex-start;
+    gap: var(--gap-mid);
+    font-size: var(--font-size-xl);
+  }
+  .frameDiv,
+  .rectangleParent1,
+  .rectangleParent2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .rectangleParent1 {
+    top: 2467px;
+    left: 1061px;
+    align-items: flex-start;
+    gap: var(--gap-mid);
+  }
+  .rectangleParent2 {
+    top: 873px;
+    left: 397px;
+    align-items: flex-end;
+    gap: 27px;
+  }
+  .frameChild5 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 314px;
+    height: 263px;
+    object-fit: cover;
+  }
+  .modernTheFutureParent4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 69px;
+  }
+  .rectangleParent3 {
+    position: absolute;
+    top: 1891px;
+    left: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .frameChild6 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 320px;
+    height: 417px;
+    object-fit: cover;
+  }
+  .modernTheFutureParent5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 75px;
+  }
+  .rectangleParent4 {
+    position: absolute;
+    top: 1891px;
+    left: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .frameChild7 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 417px;
+    object-fit: cover;
+  }
+  .rectangleParent5,
+  .rectangleParent6 {
+    position: absolute;
+    top: 873px;
+    left: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .rectangleParent6 {
+    top: 1295px;
+    left: 398px;
+  }
+  .modernTheFutureParent8 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 74px;
+  }
+  .rectangleParent7,
+  .rectangleParent8,
+  .rectangleParent9 {
+    position: absolute;
+    top: 2313px;
+    left: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .rectangleParent8,
+  .rectangleParent9 {
+    top: 1295px;
+    left: 730px;
+    align-items: flex-start;
+  }
+  .rectangleParent9 {
+    top: 1449px;
+    left: 1061px;
+    align-items: flex-end;
+    gap: var(--gap-mid);
+  }
+  .modernTheFutureParent11 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 76px;
+  }
+  .rectangleParent10 {
+    position: absolute;
+    top: 2313px;
+    left: 722px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .log0 {
+    position: relative;
+    color: var(--color-white);
+  }
+  .searchForAfrikanVibesParent {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-101);
+    box-sizing: border-box;
+    width: 600px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+      var(--padding-13xl);
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-xl);
+  }
+  .createAccount1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .createAccount {
+    position: relative;
+    width: 34px;
+    height: 22px;
+  }
+  .createAccountParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+    font-size: var(--font-size-lg);
+  }
+  .icoutlineShoppingCartParent,
+  .log0Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .log0Parent {
+    gap: 127px;
+  }
+  .lineDiv {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameParent12 {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    color: var(--brand-color-1);
+  }
+  .oghenetegaBrightIs {
+    position: absolute;
+    top: 392px;
+    left: 64px;
+    font-size: var(--font-size-5xl);
+    line-height: 34px;
+    text-align: justify;
+    display: inline-block;
+    width: 757px;
+  }
+  .frameParent13,
+  .rectangleParent11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .frameParent13 {
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .rectangleParent11 {
+    position: absolute;
+    top: 1449px;
+    left: 64px;
+    align-items: flex-end;
+    gap: var(--gap-base);
+  }
+  .modernTheFutureParent13 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 61px;
+  }
+  .materialSymbolskeyboardArroParent,
+  .rectangleParent12 {
+    position: absolute;
+    top: 2467px;
+    left: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .materialSymbolskeyboardArroParent {
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-5xs);
+  }
+  .next {
+    position: relative;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+  }
+  .materialSymbolskeyboardArroGroup,
+  .parent {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .materialSymbolskeyboardArroGroup {
+    top: 0;
+    left: 870px;
+    align-items: center;
+    gap: var(--gap-5xs);
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+    color: var(--brand-color-1);
+  }
+  .parent {
+    top: 4px;
+    left: 402px;
+    align-items: flex-start;
+    gap: 14px;
+    color: var(--color-dimgray-100);
+  }
+  .groupDiv {
+    position: absolute;
+    top: 2901px;
+    left: 285px;
+    width: 870px;
+    height: 32px;
+    font-size: var(--font-size-xl);
+    color: var(--brand-color-9);
+  }
+  .searchResultSectionartists {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 3417px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

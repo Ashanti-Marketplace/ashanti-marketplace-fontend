@@ -1,0 +1,240 @@
+.log0 {
+    color: var(--color-white);
+  }
+  .log0,
+  .searchForAfrikan {
+    position: relative;
+  }
+  .materialSymbolssearchRoundeIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .searchForAfrikanVibesParent {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-101);
+    box-sizing: border-box;
+    width: 600px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+      var(--padding-13xl);
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-xl);
+  }
+  .createAccount1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .createAccount {
+    position: relative;
+    width: 34px;
+    height: 22px;
+  }
+  .createAccountParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+    font-size: var(--font-size-lg);
+  }
+  .icoutlineShoppingCartParent,
+  .log0Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .log0Parent {
+    gap: 89px;
+  }
+  .frameChild {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameParent {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    color: var(--brand-color-1);
+  }
+  .logo {
+    position: absolute;
+    top: 85px;
+    left: 89px;
+    font-weight: 600;
+  }
+  .marketplace {
+    position: relative;
+    font-weight: 600;
+  }
+  .exploreParent,
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+  }
+  .exploreParent {
+    font-size: var(--font-size-xl);
+    color: var(--color-darkgray);
+  }
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+  }
+  .marketplaceContainer,
+  .marketplaceGroup {
+    left: 623px;
+  }
+  .marketplaceContainer {
+    left: 839px;
+  }
+  .frameItem {
+    position: absolute;
+    top: 347.25px;
+    left: -0.75px;
+    border-top: 1.5px solid #676767;
+    box-sizing: border-box;
+    width: 1441.5px;
+    height: 1.5px;
+  }
+  .div,
+  .logoParent {
+    position: absolute;
+    top: 376px;
+    left: 681px;
+    font-size: var(--main-typeface-inter-1-size);
+  }
+  .logoParent {
+    top: 1352px;
+    left: 0;
+    background-color: #2a2a2a;
+    width: 1440px;
+    height: 432px;
+    overflow: hidden;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-rubik);
+  }
+  .frameInner {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--color-gainsboro-100);
+    width: 100px;
+    height: 100px;
+  }
+  .lineDiv {
+    position: relative;
+    border-top: 2px solid var(--color-black);
+    box-sizing: border-box;
+    width: 141px;
+    height: 2px;
+  }
+  .ellipseParent {
+    position: absolute;
+    top: 274px;
+    left: 431px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .artDetails,
+  .contactInformation,
+  .giveUsDetails {
+    position: absolute;
+    top: 384px;
+    left: 368px;
+  }
+  .artDetails,
+  .giveUsDetails {
+    left: 666px;
+  }
+  .giveUsDetails {
+    top: 493px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .weAreGoing {
+    position: absolute;
+    top: 572px;
+    left: 64px;
+  }
+  .theLostOneWrapper,
+  .titleParent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .theLostOneWrapper {
+    border-bottom: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 767px;
+    flex-direction: row;
+    padding: var(--padding-3xs);
+    font-size: var(--font-size-9xl);
+  }
+  .titleParent {
+    flex-direction: column;
+    gap: var(--gap-13xl);
+  }
+  .afrikanLoverWrapper,
+  .frameGroup {
+    position: absolute;
+    left: 64px;
+    display: flex;
+  }
+  .frameGroup {
+    top: 655px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .afrikanLoverWrapper {
+    top: 1134px;
+    border-radius: var(--br-5xs);
+    background-color: #b38af1;
+    width: 535px;
+    height: 54px;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .uploadArt2 {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 1784px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--main-typeface-inter-1-size);
+    color: var(--color-white);
+    font-family: var(--main-typeface-inter-1);
+  }
+  

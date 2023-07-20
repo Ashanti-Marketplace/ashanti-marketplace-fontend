@@ -1,3 +1,396 @@
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/utilities'; */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --secondary-typeface-ubuntu-4: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --font-size-xl: 20px;
+  --secondary-typeface-ubuntu-4-size: 48px;
+  --secondary-typeface-ubuntu-3-size: 40px;
+
+  /* Colors */
+  --brand-color-7: #748479;
+  --color-white: #fff;
+  --color-darkgray-100: #a9a9a9;
+  --brand-color-5: #97a39a;
+  --brand-color-10: #273b2d;
+  --brand-color-1: #d5dad7;
+  --brand-color-101: #d9f3dd;
+  --color-mediumpurple: #b38af1;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-10xs: 3px;
+  --gap-8xs: 5px;
+  --gap-48xl: 67px;
+  --gap-49xl: 68px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --main-typeface-inter-2: Inter;
+  --secondary-typeface-ubuntu-4: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --main-typeface-inter-2-size: 32px;
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --secondary-typeface-ubuntu-4-size: 48px;
+
+  /* Colors */
+  --brand-color-9: #526658;
+  --color-dimgray-100: #526657;
+  --color-white: #fff;
+  --color-gainsboro-100: #d9d9d9;
+  --brand-color-1: #d5dad7;
+  --brand-color-10: #273b2d;
+  --color-darkgray-100: #a9a9a9;
+  --color-darkgray-200: #989898;
+  --brand-color-101: #d9f3dd;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+  --gap-base: 16px;
+  --gap-3xl: 22px;
+  --gap-10xs: 3px;
+  --gap-49xl: 68px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-ubuntu: Ubuntu;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --main-typeface-inter-1: Inter;
+  --font-ubuntu: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --main-typeface-inter-1-size: 24px;
+  --font-size-13xl: 32px;
+
+  /* Colors */
+  --brand-color-6: #18241b;
+  --brand-color-10: #273b2d;
+  --brand-color-1: #d5dad7;
+  --brand-color-101: #d9f3dd;
+  --color-white: #fff;
+  --color-darkgray: #a9a9a9;
+
+  /* Gaps */
+  --gap-5xl: 24px;
+  --gap-base: 16px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+  --padding-3xs: 10px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --main-typeface-inter-2: Inter;
+  --secondary-typeface-ubuntu-5: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --main-typeface-inter-2-size: 32px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --main-typeface-inter-1-size: 24px;
+  --secondary-typeface-ubuntu-5-size: 64px;
+  --secondary-typeface-ubuntu-3-size: 40px;
+
+  /* Colors */
+  --brand-color-7: #748479;
+  --brand-color-4: #101812;
+  --color-white: #fff;
+  --brand-color-10: #273b2d;
+  --brand-color-1: #d5dad7;
+  --brand-color-101: #d9f3dd;
+  --color-mediumpurple: #b38af1;
+  --color-darkgray: #a9a9a9;
+
+  /* Gaps */
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --main-typeface-inter-1: Inter;
+  --secondary-typeface-ubuntu-4: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --secondary-typeface-ubuntu-4-size: 48px;
+  --main-typeface-inter-1-size: 24px;
+  --font-size-9xl: 28px;
+  --font-size-13xl: 32px;
+
+  /* Colors */
+  --brand-color-10: #273b2d;
+  --color-gainsboro-100: #d9d9d9;
+  --brand-color-1: #d5dad7;
+  --brand-color-101: #d9f3dd;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-darkgray: #a9a9a9;
+
+  /* Gaps */
+  --gap-13xl: 32px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+  --padding-3xs: 10px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --main-typeface-inter-1: Inter;
+  --secondary-typeface-ubuntu-4: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --main-typeface-inter-1-size: 24px;
+  --main-typeface-inter-2-size: 32px;
+  --secondary-typeface-ubuntu-4-size: 48px;
+  --font-size-xl: 20px;
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --brand-color-12: #2f4736;
+  --brand-color-10: #273b2d;
+  --color-white: #fff;
+  --color-gainsboro-100: #d9d9d9;
+  --brand-color-1: #d5dad7;
+  --color-black: #000;
+  --color-darkgray: #a9a9a9;
+  --brand-color-101: #d9f3dd;
+
+  /* Gaps */
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --main-typeface-inter-2: Inter;
+  --secondary-typeface-ubuntu-4: Ubuntu;
+  --font-rubik: Rubik;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --main-typeface-inter-2-size: 32px;
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --secondary-typeface-ubuntu-4-size: 48px;
+
+  /* Colors */
+  --brand-color-9: #526658;
+  --color-dimgray-100: #526657;
+  --color-white: #fff;
+  --color-gainsboro-100: #d9d9d9;
+  --brand-color-1: #d5dad7;
+  --brand-color-10: #273b2d;
+  --color-darkgray-100: #a9a9a9;
+  --color-darkgray-200: #989898;
+  --brand-color-101: #d9f3dd;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+  --gap-base: 16px;
+  --gap-3xl: 22px;
+  --gap-10xs: 3px;
+  --gap-49xl: 68px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --secondary-typeface-ubuntu-3: Ubuntu;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-5xl: 24px;
+  --secondary-typeface-ubuntu-3-size: 40px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --brand-color-12: #2f4736;
+
+  /* Gaps */
+  --gap-base: 16px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-5xl: 24px;
+}

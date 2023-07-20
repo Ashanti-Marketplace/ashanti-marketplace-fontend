@@ -1,0 +1,40 @@
+.mdiuserOutlineIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .myProfile {
+    position: relative;
+  }
+  .frameParent,
+  .mdiuserOutlineParent {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .mdiuserOutlineParent {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-5xl);
+  }
+  .frameParent {
+    position: absolute;
+    top: 47px;
+    left: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .myProfileView {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 318px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  

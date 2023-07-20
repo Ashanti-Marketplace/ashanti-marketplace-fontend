@@ -1,0 +1,118 @@
+.artworks {
+    position: relative;
+    font-weight: 300;
+  }
+  .frameChild {
+    position: relative;
+    border-top: 1px solid var(--secondary-color-1);
+    box-sizing: border-box;
+    width: 705px;
+    height: 1px;
+  }
+  .artistsParent,
+  .artworksParent {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    font-size: var(--font-size-xl);
+  }
+  .artistsParent {
+    top: 341px;
+  }
+  .materialSymbolsarrowBackIoIcon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .frameParent,
+  .seeMoreResultsParent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .seeMoreResultsParent {
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .frameParent {
+    position: absolute;
+    top: 653px;
+    left: 50px;
+    flex-direction: column;
+    font-size: var(--font-size-lg);
+  }
+  .rectangleIcon {
+    position: relative;
+    width: 164px;
+    height: 89px;
+    object-fit: cover;
+  }
+  .categories {
+    position: relative;
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+  }
+  .africanWorksParent,
+  .rectangleGroup,
+  .rectangleParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-4xs);
+  }
+  .rectangleGroup,
+  .rectangleParent {
+    position: absolute;
+    top: 112px;
+    left: 50px;
+    flex-direction: row;
+    gap: var(--gap-base);
+  }
+  .rectangleGroup {
+    top: 217px;
+  }
+  .ellipseIcon {
+    position: relative;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .ellipseGroup,
+  .ellipseParent {
+    position: absolute;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+  }
+  .ellipseParent {
+    top: 393px;
+    cursor: pointer;
+  }
+  .ellipseGroup {
+    top: 509px;
+  }
+  .resultSearchOption {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 728px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-ubuntu);
+  }
+  

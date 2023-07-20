@@ -154,4 +154,56 @@ export default function Login(){
 
 
 
+
+// import { useCallback } from "react";
+// import styles from "./index.module.css";
+// const Login = () => {
+//   const onDontHaveAn1Click = useCallback(() => {
+//     // Please sync "Create account" to the project
+//   }, []);
+
+//   return (
+//     <div className={styles.login}>
+//       <b className={styles.log0}>Log0</b>
+//       <div className={styles.welcomeBack}>Welcome back!</div>
+//       <div className={styles.letsGetYou}>
+//         Let’s get you back on track as an artlover/artist
+//       </div>
+//       <div className={styles.emailWrapper}>
+//         <div className={styles.email}>Email</div>
+//       </div>
+//       <div className={styles.passwordWrapper}>
+//         <div className={styles.email}>Password</div>
+//       </div>
+//       <div className={styles.afrikanLoverWrapper}>
+//         <div className={styles.afrikanLover}>Login</div>
+//       </div>
+//       <div className={styles.afrikanLoverParent}>
+//         <div className={styles.afrikanLover}>Login with Google</div>
+//         <img className={styles.mdigoogleIcon} alt="" src="/mdigoogle.svg" />
+//       </div>
+//       <div className={styles.afrikanLoverGroup}>
+//         <div className={styles.afrikanLover}>Login with Facebook</div>
+//         <img
+//           className={styles.mdigoogleIcon}
+//           alt=""
+//           src="/icbaselinefacebook.svg"
+//         />
+//       </div>
+//       <div className={styles.dontHaveAnContainer}>
+//         <span>{`Don’t have an account? `}</span>
+//         <b>Create one</b>
+//       </div>
+//       <img className={styles.loginChild} alt="" src="/frame-1@2x.png" />
+//       <b className={styles.or}>Or</b>
+//       <div className={styles.dontHaveAnContainer1} onClick={onDontHaveAn1Click}>
+//         <span>{`Don’t have an account? `}</span>
+//         <b className={styles.createdOne}>Created one</b>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Login;
+
  

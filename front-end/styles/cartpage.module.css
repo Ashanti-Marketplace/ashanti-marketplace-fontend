@@ -1,0 +1,350 @@
+.logo {
+    position: absolute;
+    top: 85px;
+    left: 89px;
+  }
+  .logo,
+  .marketplace {
+    font-weight: 600;
+  }
+  .explore,
+  .marketplace {
+    position: relative;
+  }
+  .exploreParent,
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+  }
+  .exploreParent {
+    font-size: var(--font-size-xl);
+    color: var(--color-darkgray);
+  }
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+  }
+  .marketplaceContainer,
+  .marketplaceGroup {
+    left: 623px;
+  }
+  .marketplaceContainer {
+    left: 839px;
+  }
+  .frameChild {
+    position: absolute;
+    top: 347.25px;
+    left: -0.75px;
+    border-top: 1.5px solid #676767;
+    box-sizing: border-box;
+    width: 1441.5px;
+    height: 1.5px;
+  }
+  .div,
+  .logoParent {
+    position: absolute;
+    top: 376px;
+    left: 681px;
+    font-size: var(--main-typeface-inter-1-size);
+  }
+  .logoParent {
+    top: 1131px;
+    left: 0;
+    background-color: #2a2a2a;
+    width: 1440px;
+    height: 432px;
+    overflow: hidden;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-rubik);
+  }
+  .yourShoppingCartWrapper {
+    position: absolute;
+    top: 239px;
+    left: 63px;
+    border-radius: var(--br-5xs);
+    background-color: var(--brand-color-6);
+    width: 826.96px;
+    height: 59px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-3xs) var(--padding-3xs)
+      var(--padding-5xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .description,
+  .price {
+    position: absolute;
+    top: 322px;
+    left: 309.89px;
+    font-size: var(--font-size-xl);
+    display: inline-block;
+    width: 145.29px;
+  }
+  .price {
+    left: 669.29px;
+    width: 63.36px;
+  }
+  .cartPageChild {
+    position: absolute;
+    top: 361.5px;
+    left: 62.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 827.96px;
+    height: 1px;
+  }
+  .n35000 {
+    position: absolute;
+    top: 31px;
+    left: 607.39px;
+    display: inline-block;
+    width: 90.67px;
+  }
+  .groupChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 220.67px;
+    height: 182px;
+    object-fit: cover;
+  }
+  .mordernArtFuture,
+  .oghenetegaBright {
+    position: absolute;
+    left: 246.89px;
+    display: inline-block;
+  }
+  .mordernArtFuture {
+    top: 31px;
+    font-family: var(--font-ubuntu);
+    width: 260px;
+  }
+  .oghenetegaBright {
+    top: 72px;
+    width: 195.54px;
+  }
+  .materialSymbolsdeleteOutlinIcon {
+    position: absolute;
+    top: 27px;
+    left: 755.96px;
+    width: 34.96px;
+    height: 32px;
+    overflow: hidden;
+  }
+  .n35000Group,
+  .n35000Parent {
+    position: absolute;
+    top: 380px;
+    left: 63px;
+    width: 790.91px;
+    height: 182px;
+    font-size: var(--font-size-xl);
+  }
+  .n35000Group {
+    top: 596px;
+  }
+  .total {
+    position: absolute;
+    top: 598px;
+    left: 993px;
+    display: inline-block;
+    width: 91px;
+  }
+  .orderSummary {
+    position: relative;
+    display: inline-block;
+    width: 231.59px;
+  }
+  .frameItem {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 384.44px;
+    height: 1px;
+  }
+  .orderSummaryParent {
+    position: absolute;
+    top: 363px;
+    left: 993px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .n70000 {
+    position: absolute;
+    top: 598px;
+    left: 1272px;
+    display: inline-block;
+    width: 104px;
+  }
+  .n350002,
+  .subtotal {
+    position: relative;
+    display: inline-block;
+  }
+  .subtotal {
+    width: 96.13px;
+    flex-shrink: 0;
+  }
+  .n350002 {
+    width: 102.69px;
+  }
+  .n35000Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: var(--font-size-xl);
+  }
+  .subtotalParent {
+    width: 383px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .frameGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .enterShippingAddressWrapper {
+    border-bottom: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 383px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-3xs) var(--padding-3xs) 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: var(--font-size-xl);
+  }
+  .frameParent {
+    position: absolute;
+    top: 432px;
+    left: 993px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+  }
+  .afrikanLoverWrapper {
+    position: absolute;
+    top: 734px;
+    left: 963px;
+    border-radius: var(--br-5xs);
+    background-color: #b38af1;
+    width: 413px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .log0 {
+    position: relative;
+    color: var(--color-white);
+  }
+  .materialSymbolssearchRoundeIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .searchForAfrikanVibesParent {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-101);
+    box-sizing: border-box;
+    width: 600px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+      var(--padding-13xl);
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-xl);
+  }
+  .createAccount1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .createAccount {
+    position: relative;
+    width: 34px;
+    height: 22px;
+  }
+  .createAccountParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+    font-size: var(--font-size-lg);
+  }
+  .icoutlineShoppingCartParent,
+  .log0Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .icoutlineShoppingCartParent {
+    gap: var(--gap-5xl);
+  }
+  .log0Parent {
+    gap: 127px;
+  }
+  .lineDiv {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameContainer {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+    font-size: 48px;
+    color: var(--brand-color-1);
+  }
+  .cartPage {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 1535px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--main-typeface-inter-1-size);
+    color: var(--color-white);
+    font-family: var(--main-typeface-inter-1);
+  }
+  

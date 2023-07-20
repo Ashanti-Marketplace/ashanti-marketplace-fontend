@@ -1,0 +1,708 @@
+.featured {
+    position: absolute;
+    top: 824px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-weight: 500;
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .homePagewithUsersDetailsChild {
+    position: absolute;
+    top: 895px;
+    left: 64px;
+    border-radius: var(--br-5xs);
+    width: 424px;
+    height: 364px;
+    object-fit: cover;
+  }
+  .homePagewithUsersDetailsChild1,
+  .homePagewithUsersDetailsInner,
+  .homePagewithUsersDetailsItem,
+  .rectangleIcon {
+    position: absolute;
+    top: 3139px;
+    left: 64px;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 364px;
+    object-fit: cover;
+  }
+  .homePagewithUsersDetailsChild1,
+  .homePagewithUsersDetailsInner,
+  .rectangleIcon {
+    left: 397px;
+  }
+  .homePagewithUsersDetailsChild1,
+  .rectangleIcon {
+    top: 895px;
+    left: 508px;
+    width: 424px;
+  }
+  .homePagewithUsersDetailsChild1 {
+    left: 952px;
+  }
+  .artsFromThe,
+  .artsFromThe1,
+  .artsFromThe2,
+  .viewOurMarket {
+    position: absolute;
+    top: 1283px;
+    left: 64px;
+    font-size: var(--font-size-5xl);
+    font-weight: 500;
+  }
+  .artsFromThe1,
+  .artsFromThe2,
+  .viewOurMarket {
+    left: 508px;
+  }
+  .artsFromThe2,
+  .viewOurMarket {
+    left: 952px;
+  }
+  .viewOurMarket {
+    top: 1480px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .frameChild {
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 364px;
+    object-fit: cover;
+  }
+  .frameChild,
+  .raisingGodlyChildren {
+    position: relative;
+  }
+  .mdicardsHeartOutlineIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .mdicardsHeartOutlineParent,
+  .raisingGodlyChildrenParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .mdicardsHeartOutlineParent {
+    align-items: flex-start;
+    gap: var(--gap-base);
+  }
+  .raisingGodlyChildrenParent {
+    align-items: center;
+    gap: 41px;
+  }
+  .n10000 {
+    position: relative;
+    font-size: var(--font-size-13xl);
+  }
+  .frameParent {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .frameGroup,
+  .frameParent,
+  .modernTheFutureParent,
+  .rectangleParent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .rectangleParent {
+    position: absolute;
+    top: 1576px;
+    left: 64px;
+    flex-direction: column;
+    gap: var(--gap-lgi);
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+  }
+  .frameGroup,
+  .modernTheFutureParent {
+    flex-direction: row;
+    gap: var(--gap-lg);
+  }
+  .frameGroup {
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .rectangleContainer,
+  .rectangleGroup {
+    position: absolute;
+    left: 64px;
+    flex-direction: column;
+    gap: var(--gap-lgi);
+  }
+  .rectangleGroup {
+    top: 2097px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .rectangleContainer {
+    top: 2618px;
+  }
+  .blackArtLadyParent,
+  .frameDiv,
+  .rectangleContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frameDiv {
+    position: absolute;
+    top: 3522px;
+    left: 64px;
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .blackArtLadyParent {
+    flex-direction: row;
+    gap: 77px;
+  }
+  .frameParent4,
+  .rectangleParent1,
+  .rectangleParent2,
+  .rectangleParent3 {
+    position: absolute;
+    left: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-lgi);
+  }
+  .rectangleParent1 {
+    top: 1576px;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+  }
+  .frameParent4,
+  .rectangleParent2,
+  .rectangleParent3 {
+    top: 2097px;
+  }
+  .frameParent4,
+  .rectangleParent3 {
+    top: 2618px;
+  }
+  .frameParent4 {
+    top: 3522px;
+    gap: var(--gap-5xs);
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent4,
+  .rectangleParent5,
+  .rectangleParent6,
+  .rectangleParent7,
+  .rectangleParent8,
+  .rectangleParent9 {
+    position: absolute;
+    top: 1576px;
+    left: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-lgi);
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent5,
+  .rectangleParent6,
+  .rectangleParent7,
+  .rectangleParent8,
+  .rectangleParent9 {
+    top: 2097px;
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent6,
+  .rectangleParent7,
+  .rectangleParent8,
+  .rectangleParent9 {
+    top: 2618px;
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent7,
+  .rectangleParent8,
+  .rectangleParent9 {
+    top: 3139px;
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent8,
+  .rectangleParent9 {
+    top: 1576px;
+    left: 1063px;
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent9 {
+    top: 2097px;
+  }
+  .rectangleParent10,
+  .rectangleParent11 {
+    top: 2618px;
+  }
+  .rectangleParent11 {
+    top: 3139px;
+  }
+  .afrikanLoverWrapper {
+    position: absolute;
+    top: 3698px;
+    left: 498px;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-12);
+    box-sizing: border-box;
+    width: 444px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-5xl);
+  }
+  .homePagewithUsersDetailsChild2 {
+    position: absolute;
+    top: 4059px;
+    left: 64px;
+    border-radius: var(--br-5xs);
+    width: 424px;
+    height: 210px;
+    object-fit: cover;
+  }
+  .homePagewithUsersDetailsChild3,
+  .rectangleDiv {
+    position: absolute;
+    top: 4433px;
+    border-radius: var(--br-5xs);
+    width: 646px;
+    height: 675px;
+  }
+  .rectangleDiv {
+    left: 64px;
+    background-color: var(--color-gainsboro-100);
+  }
+  .homePagewithUsersDetailsChild3 {
+    left: 730px;
+    object-fit: cover;
+  }
+  .homePagewithUsersDetailsChild4,
+  .homePagewithUsersDetailsChild5 {
+    position: absolute;
+    top: 4059px;
+    left: 508px;
+    border-radius: var(--br-5xs);
+    width: 424px;
+    height: 210px;
+    object-fit: cover;
+  }
+  .homePagewithUsersDetailsChild5 {
+    left: 952px;
+  }
+  .ourCategroies {
+    position: absolute;
+    top: 3962px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .ourNewCollections,
+  .supportTheArtists {
+    position: absolute;
+    top: 5124px;
+    left: 64px;
+    font-weight: 500;
+  }
+  .supportTheArtists {
+    left: 730px;
+  }
+  .afrikanLoverContainer,
+  .afrikanLoverFrame {
+    top: 5180px;
+    border: 1px solid var(--brand-color-12);
+    width: 444px;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    justify-content: center;
+  }
+  .afrikanLoverContainer {
+    position: absolute;
+    left: 64px;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size-5xl);
+  }
+  .afrikanLoverFrame {
+    left: 731px;
+  }
+  .afrikanLoverFrame,
+  .afrikanLoverWrapper1,
+  .searchForAfrikanVibesWrapper {
+    position: absolute;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size-5xl);
+  }
+  .afrikanLoverWrapper1 {
+    top: 5784px;
+    left: 725px;
+    background-color: #b38af1;
+    width: 309px;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    justify-content: center;
+  }
+  .searchForAfrikanVibesWrapper {
+    top: 5698px;
+    left: 580px;
+    border: 1px solid var(--brand-color-10);
+    width: 600px;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+      var(--padding-13xl);
+    justify-content: flex-start;
+    color: var(--brand-color-1);
+  }
+  .harrietTubmanArtPrintByMa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 585px;
+    height: 799px;
+    object-fit: cover;
+  }
+  .harrietTubmanArtPrintByMaWrapper {
+    position: absolute;
+    top: 5484px;
+    left: 67px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-gainsboro-100);
+    width: 424px;
+    height: 434px;
+    overflow: hidden;
+  }
+  .signUpFor,
+  .wellKeepYou {
+    position: absolute;
+    left: 547px;
+  }
+  .signUpFor {
+    top: 5522px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .wellKeepYou {
+    top: 5587px;
+    font-size: var(--font-size-5xl);
+    text-align: center;
+    display: inline-block;
+    width: 588px;
+  }
+  .logo {
+    position: absolute;
+    top: 85px;
+    left: 89px;
+    font-weight: 600;
+  }
+  .marketplace {
+    position: relative;
+    font-weight: 600;
+  }
+  .exploreParent,
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+  }
+  .exploreParent {
+    font-size: var(--font-size-xl);
+    color: var(--color-darkgray);
+  }
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+  }
+  .marketplaceContainer,
+  .marketplaceGroup {
+    left: 623px;
+  }
+  .marketplaceContainer {
+    left: 839px;
+  }
+  .lineDiv {
+    position: absolute;
+    top: 347.25px;
+    left: -0.75px;
+    border-top: 1.5px solid #676767;
+    box-sizing: border-box;
+    width: 1441.5px;
+    height: 1.5px;
+  }
+  .div,
+  .logoParent {
+    position: absolute;
+    top: 376px;
+    left: 681px;
+    font-size: var(--font-size-5xl);
+  }
+  .logoParent {
+    top: 6039px;
+    left: 0;
+    background-color: #2a2a2a;
+    width: 1440px;
+    height: 432px;
+    overflow: hidden;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-rubik);
+  }
+  .homePagewithUsersDetailsChild6 {
+    position: absolute;
+    top: 1399.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .abstract,
+  .contemporary,
+  .painting {
+    position: absolute;
+    top: 4285px;
+    left: 64px;
+  }
+  .contemporary,
+  .painting {
+    left: 508px;
+  }
+  .painting {
+    left: 952px;
+  }
+  .deerIphone6PngByNukulN,
+  .everlasting1Icon,
+  .originalPeoplePaintingByAl {
+    position: absolute;
+    top: 4433px;
+    left: 64px;
+    border-radius: var(--br-5xs) 0 0 0;
+    width: 284px;
+    height: 396.12px;
+    object-fit: cover;
+  }
+  .deerIphone6PngByNukulN,
+  .everlasting1Icon {
+    left: 348px;
+    border-radius: 0 var(--br-5xs) var(--br-5xs) 0;
+    width: 362px;
+    height: 675px;
+  }
+  .everlasting1Icon {
+    top: 4829px;
+    left: 64px;
+    border-radius: 0 0 0 var(--br-5xs);
+    width: 284px;
+    height: 279px;
+  }
+  .homePagewithUsersDetailsChild7,
+  .homePagewithUsersDetailsChild8 {
+    position: absolute;
+    top: 3847.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .homePagewithUsersDetailsChild8 {
+    top: 5335.5px;
+  }
+  .log0 {
+    position: relative;
+    color: var(--color-white);
+  }
+  .searchForAfrikanVibesParent {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-101);
+    box-sizing: border-box;
+    width: 600px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+      var(--padding-13xl);
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-xl);
+  }
+  .createAccount1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .createAccount {
+    position: relative;
+    width: 34px;
+    height: 22px;
+  }
+  .createAccountParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+    font-size: var(--font-size-lg);
+  }
+  .icoutlineShoppingCartParent,
+  .log0Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .log0Parent {
+    gap: 127px;
+  }
+  .frameChild12 {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameParent13 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    color: var(--brand-color-1);
+  }
+  .instanceChild {
+    position: absolute;
+    top: 51px;
+    left: 619px;
+    border-radius: var(--br-5xs);
+    width: 757px;
+    height: 424px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .instanceChild1,
+  .instanceInner,
+  .instanceItem {
+    position: absolute;
+    top: 513px;
+    left: 919px;
+    background-color: var(--brand-color-10);
+    width: 53px;
+    height: 16px;
+  }
+  .instanceChild1,
+  .instanceInner {
+    left: 1003px;
+    background-color: var(--brand-color-7);
+  }
+  .instanceChild1 {
+    left: 1087px;
+  }
+  .discoverAndCollect,
+  .thePremierMarketplace {
+    position: relative;
+    display: inline-block;
+    width: 446px;
+  }
+  .thePremierMarketplace {
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-inter);
+    width: 369px;
+  }
+  .discoverAndCollectUniqueArParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .afrikanLoverWrapper2 {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-12);
+    box-sizing: border-box;
+    width: 444px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-inter);
+  }
+  .frameParent15 {
+    position: absolute;
+    top: 146px;
+    left: 64px;
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 37px;
+  }
+  .instanceChild2 {
+    position: absolute;
+    top: 563.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameParent14 {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    width: 1440px;
+    height: 564px;
+    overflow: hidden;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .homePagewithUsersDetails {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 6471px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

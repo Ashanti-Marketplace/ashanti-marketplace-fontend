@@ -1,0 +1,335 @@
+.logo {
+    position: absolute;
+    top: 85px;
+    left: 89px;
+  }
+  .logo,
+  .marketplace {
+    font-weight: 600;
+  }
+  .explore,
+  .marketplace {
+    position: relative;
+  }
+  .exploreParent,
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+  }
+  .exploreParent {
+    font-size: var(--font-size-xl);
+    color: var(--color-darkgray);
+  }
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+  }
+  .marketplaceContainer,
+  .marketplaceGroup {
+    left: 623px;
+  }
+  .marketplaceContainer {
+    left: 839px;
+  }
+  .frameChild {
+    position: absolute;
+    top: 347.25px;
+    left: -0.75px;
+    border-top: 1.5px solid #676767;
+    box-sizing: border-box;
+    width: 1441.5px;
+    height: 1.5px;
+  }
+  .div,
+  .logoParent {
+    position: absolute;
+    top: 376px;
+    left: 681px;
+    font-size: var(--main-typeface-inter-1-size);
+  }
+  .logoParent {
+    top: 2224px;
+    left: 0;
+    background-color: #2a2a2a;
+    width: 1440px;
+    height: 432px;
+    overflow: hidden;
+    font-size: var(--main-typeface-inter-2-size);
+    font-family: var(--font-rubik);
+  }
+  .sellYourArtwork {
+    position: absolute;
+    top: 249px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-5-size);
+    font-family: var(--secondary-typeface-ubuntu-5);
+    display: inline-block;
+    width: 555px;
+  }
+  .sellersSectionChild {
+    position: absolute;
+    top: 249px;
+    left: 1065px;
+    border-radius: var(--br-5xs);
+    width: 311px;
+    height: 202px;
+    object-fit: cover;
+  }
+  .afrikanLoverContainer,
+  .afrikanLoverWrapper {
+    position: absolute;
+    top: 684px;
+    left: 60px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumpurple);
+    width: 535px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .afrikanLoverContainer {
+    top: 1483px;
+    left: 453px;
+  }
+  .bySellingYour {
+    flex: 1;
+    position: relative;
+  }
+  .text,
+  .text1,
+  .text2 {
+    position: absolute;
+    top: 1259px;
+    left: 60px;
+    width: 424px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--brand-color-7);
+  }
+  .text1,
+  .text2 {
+    left: 508px;
+  }
+  .text2 {
+    top: 1273px;
+    left: 956px;
+  }
+  .whyYouShould {
+    position: absolute;
+    top: 942px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-5-size);
+    font-family: var(--secondary-typeface-ubuntu-5);
+  }
+  .icons8Increase481,
+  .icons8Increase482,
+  .icons8Increase483 {
+    position: absolute;
+    top: 1085px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .icons8Increase482,
+  .icons8Increase483 {
+    left: 508px;
+  }
+  .icons8Increase483 {
+    left: 956px;
+  }
+  .brandBuilding,
+  .easyAndConvenient,
+  .increasedReach {
+    position: absolute;
+    top: 1205px;
+    left: 60px;
+    font-size: var(--secondary-typeface-ubuntu-3-size);
+    font-family: var(--secondary-typeface-ubuntu-5);
+  }
+  .brandBuilding,
+  .easyAndConvenient {
+    left: 508px;
+  }
+  .brandBuilding {
+    left: 956px;
+  }
+  .meetAshantiYour {
+    position: absolute;
+    top: 71px;
+    left: 60px;
+    display: inline-block;
+    width: 654px;
+  }
+  .afrikanLoverFrame {
+    position: absolute;
+    top: 273px;
+    left: 60px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumpurple);
+    width: 312px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--main-typeface-inter-1-size);
+    font-family: var(--main-typeface-inter-2);
+  }
+  .frameInner,
+  .frameItem {
+    position: absolute;
+    top: 71px;
+    left: 732px;
+    width: 308px;
+    height: 256px;
+    object-fit: cover;
+  }
+  .frameInner {
+    left: 1064px;
+    width: 312px;
+  }
+  .meetAshantiYourNewArtPlaParent {
+    position: absolute;
+    top: 1760px;
+    left: 0;
+    background-color: var(--brand-color-4);
+    width: 1440px;
+    height: 464px;
+    overflow: hidden;
+    font-size: var(--secondary-typeface-ubuntu-5-size);
+    font-family: var(--secondary-typeface-ubuntu-5);
+  }
+  .log0 {
+    position: relative;
+    color: var(--color-white);
+  }
+  .materialSymbolssearchRoundeIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .searchForAfrikanVibesParent {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-101);
+    box-sizing: border-box;
+    width: 600px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+      var(--padding-13xl);
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-xl);
+  }
+  .createAccount1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .createAccount {
+    position: relative;
+    width: 34px;
+    height: 22px;
+  }
+  .createAccountParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+    font-size: var(--font-size-lg);
+  }
+  .icoutlineShoppingCartParent,
+  .log0Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .log0Parent {
+    gap: 89px;
+  }
+  .lineDiv {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameParent {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+    font-size: 48px;
+    color: var(--brand-color-1);
+  }
+  .sellersSectionItem {
+    position: absolute;
+    top: 853.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .rectangleIcon,
+  .sellersSectionInner {
+    position: absolute;
+    top: 249px;
+    left: 730px;
+    border-radius: var(--br-5xs);
+    width: 311px;
+    height: 202px;
+    object-fit: cover;
+  }
+  .rectangleIcon {
+    top: 474px;
+    width: 646px;
+    height: 264px;
+  }
+  .sellingYourArtwork {
+    position: absolute;
+    top: 420px;
+    left: 64px;
+    font-size: var(--main-typeface-inter-2-size);
+    display: inline-block;
+    width: 537px;
+  }
+  .sellersSection {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 2656px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--main-typeface-inter-1-size);
+    color: var(--color-white);
+    font-family: var(--main-typeface-inter-2);
+  }
+  

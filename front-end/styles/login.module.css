@@ -1,0 +1,132 @@
+.log0 {
+    top: 217px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+  }
+  .letsGetYou,
+  .log0,
+  .welcomeBack {
+    position: absolute;
+    left: 63px;
+  }
+  .welcomeBack {
+    top: 307px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .letsGetYou {
+    top: 371px;
+  }
+  .email {
+    position: relative;
+    font-weight: 500;
+  }
+  .emailWrapper,
+  .passwordWrapper {
+    position: absolute;
+    top: 432px;
+    left: 63px;
+    border-bottom: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 536px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-3xs) var(--padding-3xs) 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .passwordWrapper {
+    top: 518px;
+  }
+  .afrikanLover {
+    position: relative;
+    font-weight: 600;
+  }
+  .afrikanLoverWrapper {
+    position: absolute;
+    top: 614px;
+    left: 63px;
+    border-radius: var(--br-5xs);
+    background-color: #b38af1;
+    width: 535px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .mdigoogleIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .afrikanLoverGroup,
+  .afrikanLoverParent {
+    position: absolute;
+    top: 740px;
+    left: 63px;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-12);
+    box-sizing: border-box;
+    width: 535px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-5xs);
+  }
+  .afrikanLoverGroup {
+    top: 810px;
+  }
+  .dontHaveAnContainer {
+    position: absolute;
+    top: 10533px;
+    left: -4681px;
+    font-size: var(--font-size-base);
+    color: #000;
+  }
+  .loginChild,
+  .or {
+    position: absolute;
+  }
+  .loginChild {
+    top: 0;
+    left: 730px;
+    width: 710px;
+    height: 1024px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .or {
+    top: 700px;
+    left: 321px;
+    font-size: var(--font-size-base);
+  }
+  .createdOne {
+    color: #273b2d;
+  }
+  .dontHaveAnContainer1 {
+    position: absolute;
+    top: 888px;
+    left: 209px;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+  }
+  .login {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--main-typeface-inter-1-size);
+    color: var(--color-white);
+    font-family: var(--main-typeface-inter-1);
+  }
+  

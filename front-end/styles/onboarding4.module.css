@@ -1,0 +1,91 @@
+.onboarding4Child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 573px;
+    height: 915px;
+    overflow: hidden;
+  }
+  .almostDoneNow {
+    position: absolute;
+    top: 106px;
+    left: 638px;
+    font-size: var(--secondary-typeface-ubuntu-3-size);
+    font-family: var(--secondary-typeface-ubuntu-3);
+    display: inline-block;
+    width: 475px;
+  }
+  .afrikanLover {
+    position: relative;
+    font-weight: 600;
+  }
+  .afrikanLoverContainer,
+  .afrikanLoverWrapper {
+    position: absolute;
+    left: 638px;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    width: 475px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-5xl);
+  }
+  .afrikanLoverWrapper {
+    top: 585px;
+    background-color: #b38af1;
+    color: var(--color-white);
+  }
+  .afrikanLoverContainer {
+    top: 663px;
+    border: 1px solid var(--brand-color-12);
+    color: var(--brand-color-12);
+  }
+  .frameChild {
+    width: 32px;
+    height: 32px;
+  }
+  .frameChild,
+  .take {
+    position: relative;
+  }
+  .frameDiv,
+  .instanceContainer,
+  .instanceGroup,
+  .instanceParent {
+    position: absolute;
+    top: 322px;
+    left: 663px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .frameDiv,
+  .instanceContainer,
+  .instanceGroup {
+    top: 386px;
+  }
+  .frameDiv,
+  .instanceContainer {
+    top: 450px;
+  }
+  .frameDiv {
+    top: 514px;
+  }
+  .onboarding4 {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 915px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  

@@ -1,0 +1,128 @@
+.createAccountChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 437px;
+    height: 1024px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .createAnAccount,
+  .log0 {
+    position: absolute;
+    top: 137px;
+    left: 507px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+  }
+  .createAnAccount {
+    top: 227px;
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .signUpAnd {
+    position: absolute;
+    top: 303px;
+    left: 507px;
+  }
+  .name {
+    position: relative;
+    font-weight: 500;
+  }
+  .emailWrapper,
+  .nameWrapper,
+  .passwordWrapper {
+    position: absolute;
+    top: 364px;
+    left: 507px;
+    border-bottom: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 536px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-3xs) var(--padding-3xs) 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .emailWrapper,
+  .passwordWrapper {
+    top: 450px;
+  }
+  .passwordWrapper {
+    top: 536px;
+  }
+  .afrikanLover {
+    position: relative;
+    font-weight: 600;
+  }
+  .afrikanLoverWrapper {
+    position: absolute;
+    top: 622px;
+    left: 508px;
+    border-radius: var(--br-5xs);
+    background-color: #b38af1;
+    width: 535px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .mdigoogleIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .afrikanLoverGroup,
+  .afrikanLoverParent {
+    position: absolute;
+    top: 741px;
+    left: 507px;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-12);
+    box-sizing: border-box;
+    width: 535px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-5xs);
+  }
+  .afrikanLoverGroup {
+    top: 819px;
+    left: 508px;
+  }
+  .login {
+    color: var(--brand-color-12);
+  }
+  .alreadyHaveAnContainer,
+  .or {
+    position: absolute;
+    font-size: var(--font-size-base);
+  }
+  .alreadyHaveAnContainer {
+    top: 897px;
+    left: 654px;
+    cursor: pointer;
+  }
+  .or {
+    top: 708px;
+    left: 765px;
+  }
+  .createAccount {
+    position: relative;
+    background-color: var(--brand-color-2);
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--main-typeface-inter-1-size);
+    color: var(--color-white);
+    font-family: var(--main-typeface-inter-1);
+  }
+  

@@ -1,0 +1,648 @@
+.logo {
+    position: absolute;
+    top: 85px;
+    left: 89px;
+  }
+  .logo,
+  .marketplace {
+    font-weight: 600;
+  }
+  .explore,
+  .marketplace {
+    position: relative;
+  }
+  .exploreParent,
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
+  }
+  .exploreParent {
+    font-size: var(--font-size-xl);
+    color: var(--color-darkgray-100);
+  }
+  .marketplaceContainer,
+  .marketplaceGroup,
+  .marketplaceParent {
+    position: absolute;
+    top: 85px;
+    left: 407px;
+  }
+  .marketplaceContainer,
+  .marketplaceGroup {
+    left: 623px;
+  }
+  .marketplaceContainer {
+    left: 839px;
+  }
+  .frameChild {
+    position: absolute;
+    top: 347.25px;
+    left: -0.75px;
+    border-top: 1.5px solid #676767;
+    box-sizing: border-box;
+    width: 1441.5px;
+    height: 1.5px;
+  }
+  .div,
+  .logoParent {
+    position: absolute;
+    top: 376px;
+    left: 681px;
+    font-size: var(--font-size-5xl);
+  }
+  .logoParent {
+    top: 3470px;
+    left: 0;
+    background-color: #2a2a2a;
+    width: 1440px;
+    height: 432px;
+    overflow: hidden;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-rubik);
+  }
+  .african {
+    color: #b38af1;
+  }
+  .resultingShowingForContainer {
+    position: absolute;
+    top: 244px;
+    left: 64px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    font-family: var(--secondary-typeface-ubuntu-4);
+  }
+  .searchResultSectionartChild {
+    position: absolute;
+    top: 360.5px;
+    left: -0.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .log0 {
+    position: relative;
+    color: var(--color-white);
+  }
+  .materialSymbolssearchRoundeIcon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .searchForAfrikanVibesParent {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--brand-color-101);
+    box-sizing: border-box;
+    width: 600px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl) 32px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-xl);
+  }
+  .createAccount1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .createAccount {
+    position: relative;
+    width: 34px;
+    height: 22px;
+  }
+  .createAccountParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+    font-size: var(--font-size-lg);
+  }
+  .icoutlineShoppingCartParent,
+  .log0Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .log0Parent {
+    gap: 127px;
+  }
+  .frameItem {
+    position: relative;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 1441px;
+    height: 1px;
+  }
+  .frameParent {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+    font-size: var(--secondary-typeface-ubuntu-4-size);
+    color: var(--brand-color-1);
+  }
+  .artworks,
+  .filterBy {
+    position: absolute;
+    top: 501px;
+    left: 67px;
+    font-size: var(--font-size-5xl);
+  }
+  .artworks {
+    top: 507px;
+    left: 397px;
+  }
+  .searchResultSectionartItem {
+    position: absolute;
+    top: 630.5px;
+    left: 63.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 314px;
+    height: 1px;
+  }
+  .lineDiv,
+  .searchResultSectionartChild1,
+  .searchResultSectionartChild2,
+  .searchResultSectionartChild3,
+  .searchResultSectionartInner {
+    position: absolute;
+    top: 808.5px;
+    left: 63.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 314px;
+    height: 1px;
+  }
+  .lineDiv,
+  .searchResultSectionartChild1,
+  .searchResultSectionartChild2,
+  .searchResultSectionartChild3 {
+    top: 1106.5px;
+  }
+  .searchResultSectionartChild1,
+  .searchResultSectionartChild2,
+  .searchResultSectionartChild3 {
+    top: 1880.5px;
+  }
+  .searchResultSectionartChild2,
+  .searchResultSectionartChild3 {
+    top: 1640.5px;
+  }
+  .searchResultSectionartChild3 {
+    top: 746.5px;
+  }
+  .frameInner {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 415px;
+    object-fit: cover;
+  }
+  .mdicardsHeartOutlineParent,
+  .modernTheFutureParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .modernTheFutureParent {
+    align-items: center;
+    gap: var(--gap-49xl);
+  }
+  .n10000 {
+    position: relative;
+    font-size: var(--font-size-13xl);
+  }
+  .frameGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-10xs);
+  }
+  .rectangleContainer,
+  .rectangleGroup,
+  .rectangleParent,
+  .rectangleParent1,
+  .rectangleParent2 {
+    position: absolute;
+    top: 628px;
+    left: 1063px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .rectangleContainer,
+  .rectangleGroup,
+  .rectangleParent1,
+  .rectangleParent2 {
+    top: 1161px;
+  }
+  .rectangleContainer,
+  .rectangleParent1,
+  .rectangleParent2 {
+    top: 1696px;
+  }
+  .rectangleParent1,
+  .rectangleParent2 {
+    top: 2215px;
+  }
+  .rectangleParent2 {
+    top: 2756px;
+  }
+  .frameChild4 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 313px;
+    object-fit: cover;
+  }
+  .rectangleParent3 {
+    position: absolute;
+    top: 628px;
+    left: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    cursor: pointer;
+  }
+  .frameChild5 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 408px;
+    object-fit: cover;
+  }
+  .rectangleParent4,
+  .rectangleParent5,
+  .rectangleParent6 {
+    position: absolute;
+    top: 1066px;
+    left: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .rectangleParent5,
+  .rectangleParent6 {
+    top: 1601px;
+  }
+  .rectangleParent6 {
+    top: 2120px;
+  }
+  .mdicardsHeartOutlineParent7,
+  .modernTheFutureParent7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .mdicardsHeartOutlineParent7 {
+    width: 81px;
+    align-items: flex-start;
+    gap: var(--gap-base);
+  }
+  .modernTheFutureParent7 {
+    align-items: center;
+    gap: 67px;
+  }
+  .rectangleParent7 {
+    position: absolute;
+    top: 2661px;
+    left: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .frameChild9 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 219px;
+    object-fit: cover;
+  }
+  .rectangleParent8 {
+    position: absolute;
+    top: 628px;
+    left: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .frameChild10 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 313px;
+    height: 417px;
+    object-fit: cover;
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent12,
+  .rectangleParent9 {
+    position: absolute;
+    top: 963px;
+    left: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .rectangleParent10,
+  .rectangleParent11,
+  .rectangleParent12 {
+    top: 1498px;
+  }
+  .rectangleParent11,
+  .rectangleParent12 {
+    top: 2017px;
+  }
+  .rectangleParent12 {
+    top: 2558px;
+  }
+  .artist,
+  .color,
+  .enterASearch,
+  .priceRange,
+  .rarity {
+    position: absolute;
+    top: 823px;
+    left: 64px;
+    font-size: var(--font-size-xl);
+  }
+  .color,
+  .enterASearch,
+  .priceRange,
+  .rarity {
+    top: 1121px;
+  }
+  .color,
+  .enterASearch,
+  .priceRange {
+    top: 1895px;
+  }
+  .enterASearch,
+  .priceRange {
+    top: 1655px;
+  }
+  .enterASearch {
+    top: 719px;
+    font-size: var(--font-size-base);
+  }
+  .materialSymbolskeyboardArroIcon,
+  .materialSymbolssearchRoundeIcon1 {
+    position: absolute;
+    top: 649px;
+    left: 345px;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+  }
+  .materialSymbolssearchRoundeIcon1 {
+    top: 706px;
+  }
+  .materialSymbolskeyboardArroIcon1,
+  .materialSymbolskeyboardArroIcon2 {
+    position: absolute;
+    top: 823px;
+    left: 345px;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+  }
+  .materialSymbolskeyboardArroIcon2 {
+    top: 1121px;
+  }
+  .materialSymbolskeyboardArroIcon3,
+  .materialSymbolskeyboardArroIcon4 {
+    position: absolute;
+    top: 1895px;
+    left: 345px;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+  }
+  .materialSymbolskeyboardArroIcon4 {
+    top: 1655px;
+  }
+  .instanceChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    border: 1.5px solid var(--brand-color-10);
+    box-sizing: border-box;
+  }
+  .rectangleWrapper {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  .frameParent13,
+  .instanceParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .frameParent13 {
+    position: absolute;
+    top: 895px;
+    left: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-3xl);
+    font-size: var(--font-size-xl);
+  }
+  .frameChild14 {
+    position: relative;
+    border-radius: var(--br-5xs);
+    border: 1.5px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+  }
+  .frameParent14 {
+    top: 1193px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-3xl);
+  }
+  .frameParent14,
+  .frameParent15,
+  .min,
+  .n0,
+  .n500000 {
+    position: absolute;
+    left: 64px;
+    font-size: var(--font-size-xl);
+  }
+  .frameParent15 {
+    top: 1967px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-3xl);
+  }
+  .min,
+  .n0,
+  .n500000 {
+    top: 1707px;
+  }
+  .n0,
+  .n500000 {
+    top: 1844px;
+    font-size: var(--font-size-base);
+  }
+  .n500000 {
+    top: 1848px;
+    left: 294px;
+  }
+  .n {
+    top: 1748px;
+    left: 191px;
+    color: var(--color-darkgray-200);
+  }
+  .max,
+  .n,
+  .n1 {
+    position: absolute;
+    font-size: var(--font-size-xl);
+  }
+  .n1 {
+    top: 1748px;
+    left: 361px;
+    color: var(--color-darkgray-200);
+  }
+  .max {
+    top: 1707px;
+    left: 234px;
+  }
+  .searchResultSectionartChild4,
+  .searchResultSectionartChild5,
+  .searchResultSectionartChild6 {
+    position: absolute;
+    top: 1779.5px;
+    left: 63.5px;
+    border-top: 1px solid var(--brand-color-10);
+    box-sizing: border-box;
+    width: 144px;
+    height: 1px;
+  }
+  .searchResultSectionartChild5,
+  .searchResultSectionartChild6 {
+    top: 1819.5px;
+    width: 314px;
+  }
+  .searchResultSectionartChild6 {
+    top: 1779.5px;
+    left: 233.5px;
+    width: 144px;
+  }
+  .ellipseDiv,
+  .searchResultSectionartChild7 {
+    position: absolute;
+    top: 1808px;
+    left: 64px;
+    border-radius: 50%;
+    background-color: var(--color-gainsboro-100);
+    width: 24px;
+    height: 24px;
+  }
+  .searchResultSectionartChild7 {
+    left: 353px;
+  }
+  .materialSymbolskeyboardArroParent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .next {
+    position: relative;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+  }
+  .materialSymbolskeyboardArroGroup,
+  .parent {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .materialSymbolskeyboardArroGroup {
+    top: 0;
+    left: 870px;
+    align-items: center;
+    gap: var(--gap-5xs);
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+    color: var(--brand-color-1);
+  }
+  .parent {
+    top: 4px;
+    left: 402px;
+    align-items: flex-start;
+    gap: 14px;
+    color: var(--color-dimgray-100);
+  }
+  .groupDiv {
+    position: absolute;
+    top: 3347px;
+    left: 397px;
+    width: 870px;
+    height: 32px;
+    font-size: var(--font-size-xl);
+    color: var(--brand-color-9);
+  }
+  .searchResultSectionart {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 3902px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

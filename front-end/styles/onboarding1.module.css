@@ -1,0 +1,69 @@
+.onboarding1Child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 573px;
+    height: 915px;
+    overflow: hidden;
+  }
+  .marySokoh {
+    margin: 0;
+  }
+  .discoverArtYoull,
+  .marySokohWelcomeContainer {
+    position: absolute;
+    left: 638px;
+    display: inline-block;
+  }
+  .marySokohWelcomeContainer {
+    top: 166px;
+    font-size: var(--secondary-typeface-ubuntu-5-size);
+    font-family: var(--secondary-typeface-ubuntu-5);
+    width: 475px;
+  }
+  .discoverArtYoull {
+    top: 436px;
+    font-size: 32px;
+    font-weight: 500;
+    width: 467px;
+  }
+  .afrikanLover {
+    position: relative;
+    font-weight: 600;
+  }
+  .afrikanLoverContainer,
+  .afrikanLoverWrapper {
+    position: absolute;
+    left: 638px;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    width: 475px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xl) var(--padding-13xl);
+    align-items: center;
+    justify-content: center;
+  }
+  .afrikanLoverWrapper {
+    top: 585px;
+    background-color: #b38af1;
+    color: var(--color-white);
+  }
+  .afrikanLoverContainer {
+    top: 663px;
+    border: 1px solid var(--brand-color-12);
+    color: var(--brand-color-12);
+  }
+  .onboarding1 {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 915px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  

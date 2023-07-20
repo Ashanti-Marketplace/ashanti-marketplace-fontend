@@ -1,5 +1,23 @@
-import Product from '../../pages/product';
+// pages/product/[productSlug].js
+
+import Product from '../../components/Product';
 import ProductFetcher from '../../utils/product-fetcher';
+
+export async function getStaticPaths() {
+  // Fetch the list of product slugs from your API or data source
+  // Replace this with your actual data fetching logic
+  const product = await ProductFetcher(productSlug);
+
+  // Map the product slugs to the `params` object required for the dynamic routes
+  const paths = productSlugs.map((slug) => ({
+    params: { productSlug: slug },
+  }));
+
+  return {
+    paths,
+    fallback: false, // Set to 'blocking' if you want to use incremental static regeneration
+  };
+}
 
 export async function getStaticProps({ params }) {
   const productSlug = params.productSlug;
