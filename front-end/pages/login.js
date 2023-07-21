@@ -1,14 +1,12 @@
 import Link from "next/link"
-
 import { useRouter } from 'next/router';
 import {  useUser } from '../utils/contexts/userContext';
-import { useState } from "react";
+import styles from "../styles/login.module.css";
+const Login = () => {
 
 
-export default function Login(){
+const { dispatch } = useUser();
 
-  const { setUser,setLoggedIn } = useUser();
-   
   const router = useRouter();
      // Handles the submit event on form submit.
     
@@ -21,7 +19,7 @@ export default function Login(){
       email: event.target.email.value,
       pwd: event.target.password.value,
     }
- 
+  
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data)
  
@@ -49,23 +47,13 @@ export default function Login(){
     alert(`Is this your full name: ${result.data}`)
     if (result.ok) {
       // If login is successful, store authentication status in local storage
-      localStorage.setItem('isLoggedIn', true);
- 
-          // Store login status in local storage
-    // localStorage.setItem('loggedIn', JSON.stringify(true));
+      //localStorage.setItem('isLoggedIn', true);
 
-    // Store login status in local storage
-    // localStorage.setItem('loggedIn', JSON.stringify(true));
-
-
-
-      // Redirect to authenticated route or show success message
-      // Update the user state with server response
     // If login is successful, update the user state with server response
- setUser(result.user);
 
-    // Update the login status state
-    setLoggedIn(true);
+   // Update the login status state
+    // Perform login logic, if successful dispatch LOGIN action
+    dispatch({ type: 'LOGIN', type:'SET_USER' });
 
     // Redirect to products page
     router.push('/products');
@@ -73,137 +61,68 @@ export default function Login(){
       // Handle login error, show error message, etc.
       
   } 
-  }catch (error) {
+     }catch (error) {
       console.log(error.response);
     }
- 
    
   }
-  
-
- return(
-  
-    <form onSubmit={handleSubmit}>
+  return (
+   <div className={styles.login}>
+      <b className={styles.log0}>Log0</b>
+<form  onSubmit={handleSubmit}>
+     <div className={styles.welcomeBack}>Welcome back!</div>
+       <div className={styles.letsGetYou}>  
+         Let’s get you back on track as an artlover/artist
+       </div>
+       <div className={styles.emailWrapper}>
+            <input className= {styles.email} type="email" id="email" name="email"  placeholder="Email" required/>
+         
+       </div>
+       <div className={styles.passwordWrapper}>
+           <input className={styles.email} type="password" id="password" name="password" placeholder="Password" required/>
+       </div>
+       
+<button className={styles.afrikanLoverWrapper} type="submit">Submit</button>
+        
     
-    <div className="overflow-hidden bg-[#090e0b] flex flex-row justify-between pl-16 w-full items-center"></div>
-  <div className="self-end flex flex-col mb-[117px] gap-2 h-[690px]">
-    <div className="text-5xl font-['Inter'] font-bold text-white self-start mb-6 w-32">
-      Log0
-    </div>
-    <div className="whitespace-nowrap text-5xl font-['Ubuntu'] text-white self-start w-3/5">
-      Welcome back!
-    </div>
-    <div className="whitespace-nowrap text-2xl font-['Inter'] text-white mb-6 mr-px">
-      Let’s get you back on track as an artlover/artist
-    </div>
 
-    /* We pass the event to the handleSubmit function on submit.*/
-    
-      <div className="border-solid border-white flex flex-col justify-center mb-6 h-12 shrink-0 items-start border-t-0 border-b border-x-0">
-        <input className="text-2xl font-['Inter'] font-medium text-white w-16" type="email" id="email" name="email"  placeholder="Email" required/>
+</form>
+      <div className={styles.afrikanLoverParent}>
+      <Link className={styles.afrikanLover} href= '/'>
+      Login with Google
+      </Link>
+        <img className={styles.mdigoogleIcon} alt="" src="/mdigoogle.svg" />
       </div>
+
+      <div className={styles.afrikanLoverGroup}>
+
+      <Link className={styles.afrikanLover} href= '/'>
+      Login with Facebook
+      </Link>
+
+        <img
+          className={styles.mdigoogleIcon}
+          alt=""
+          src="/icbaselinefacebook.svg"
+        />
+      </div>
+      <div className={styles.dontHaveAnContainer}>
+        <span>{`Don’t have an account? `}</span>
+        <b>Create one</b>
+      </div>
+      <img className={styles.loginChild} alt="" src="/frame-1@2x.png" />
+      <b className={styles.or}>Or</b>
       
-      <div className="border-solid border-white flex flex-col justify-center mb-8 h-12 shrink-0 items-start border-t-0 border-b border-x-0">
-       <input className="text-2xl font-['Inter'] font-medium text-white w-[113px]"type="password" id="password" name="password" placeholder="Password" required/>
+      <div className={styles.dontHaveAnContainer1}>
+        <span>{`Don’t have an account? `}</span>
+        <Link className={styles.createdOne} href= '/'>
+        Created one
+      </Link>
       </div>
-      
-      <div className="bg-[#b38af1] flex flex-col justify-center h-12 shrink-0 items-center mb-6 mr-px rounded-lg">
-      <button className="text-2xl font-['Inter'] font-semibold text-white w-16"type="submit">Submit</button>
-      </div>
-
-      <div className="font-['Inter'] font-bold text-white self-center mb-3 w-5">
-      Or
     </div>
+  );
+};
 
-    <div className="border-solid border-[#2f4736] flex flex-row justify-center gap-2 h-12 shrink-0 items-center mb-2 mr-px border rounded-lg">
-      <a href='./signup' className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-[210px] shrink-0">
-        Login with Google
-      </a>
-      <img
-        src="https://file.rendit.io/n/XOKcZzv0fFr9J9cajLLI.svg"
-        className="min-h-0 min-w-0 w-8 shrink-0"
-      />
-    </div>
-    <div className="border-solid border-[#2f4736] flex flex-row justify-center gap-2 h-12 shrink-0 items-center mb-4 mr-px border rounded-lg">
-      <a className="whitespace-nowrap text-2xl font-['Inter'] font-semibold text-white w-1/2" href="google.com">
-        Login with Facebook
-      </a>
-      <img
-        src="https://file.rendit.io/n/RL0opZFFsdclP9NCTjfB.svg"
-        className="min-h-0 min-w-0 w-8 shrink-0"
-      />
-    </div>
-    <div className="whitespace-nowrap font-['Inter'] text-white self-end mr-[113px] w-1/2">
-      Don’t have an account?{" "}
-      <Link href='/signup' className="font-bold text-[#273b2d] contents">Created one</Link>
-    </div>
-  </div>
-  <img
-    src="https://file.rendit.io/n/WGpHGGEvV1dIjQ2qEUfv.png"
-    className="min-h-0 min-w-0"
-  />
-  
-  </form>
-     
-    
- 
-)
-
-}
-
-
-
-
-
-// import { useCallback } from "react";
-// import styles from "./index.module.css";
-// const Login = () => {
-//   const onDontHaveAn1Click = useCallback(() => {
-//     // Please sync "Create account" to the project
-//   }, []);
-
-//   return (
-//     <div className={styles.login}>
-//       <b className={styles.log0}>Log0</b>
-//       <div className={styles.welcomeBack}>Welcome back!</div>
-//       <div className={styles.letsGetYou}>
-//         Let’s get you back on track as an artlover/artist
-//       </div>
-//       <div className={styles.emailWrapper}>
-//         <div className={styles.email}>Email</div>
-//       </div>
-//       <div className={styles.passwordWrapper}>
-//         <div className={styles.email}>Password</div>
-//       </div>
-//       <div className={styles.afrikanLoverWrapper}>
-//         <div className={styles.afrikanLover}>Login</div>
-//       </div>
-//       <div className={styles.afrikanLoverParent}>
-//         <div className={styles.afrikanLover}>Login with Google</div>
-//         <img className={styles.mdigoogleIcon} alt="" src="/mdigoogle.svg" />
-//       </div>
-//       <div className={styles.afrikanLoverGroup}>
-//         <div className={styles.afrikanLover}>Login with Facebook</div>
-//         <img
-//           className={styles.mdigoogleIcon}
-//           alt=""
-//           src="/icbaselinefacebook.svg"
-//         />
-//       </div>
-//       <div className={styles.dontHaveAnContainer}>
-//         <span>{`Don’t have an account? `}</span>
-//         <b>Create one</b>
-//       </div>
-//       <img className={styles.loginChild} alt="" src="/frame-1@2x.png" />
-//       <b className={styles.or}>Or</b>
-//       <div className={styles.dontHaveAnContainer1} onClick={onDontHaveAn1Click}>
-//         <span>{`Don’t have an account? `}</span>
-//         <b className={styles.createdOne}>Created one</b>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Login;
+export default Login;
 
  

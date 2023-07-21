@@ -1,57 +1,46 @@
 
-import { createContext, useState,useEffect, useContext } from 'react';
+import { createContext, useState, useEffect, useContext, useReducer } from 'react';
 
 const UserContext = createContext();
 
+const initialState = {
+  loggedIn: false,
+  user: null,
+  likedProducts: [],
+  cartItems: [],
+  totalPrice: '',
+};
+
+const userReducer = (state, action) => {
+  switch (action.type) {
+    case 'LOGIN':
+      return { ...state, loggedIn: true };
+    case 'LOGOUT':
+      return { ...state, loggedIn: false };
+    case 'SET_USER':
+      return { ...state, user: action.payload };
+    case 'ADD_TO_LIKED_PRODUCTS':
+      return { ...state, likedProducts: [...state.likedProducts, action.payload] };
+    case 'ADD_TO_CART':
+      return { ...state, cartItems: [...state.cartItems, action.payload] };
+    case 'REMOVE_FROM_CART':
+      return { ...state, cartItems: state.cartItems.filter(item => item.id !== action.payload) };
+    case 'CALCULATE_TOTAL_PRICE':
+      let totalPrice = 0;
+      state.cartItems.forEach((item) => {
+        totalPrice += item.price * item.quantity;
+      });
+      return { ...state, totalPrice: totalPrice.toFixed(2) };
+    default:
+      return state;
+  }
+};
+
 export const UserProvider = ({ children }) => {
-    const [loggedIn, setLoggedIn] = useState(false);
-    const [user, setUser] = useState(null);
-
-  const [likedProducts, setLikedProducts] = useState([]);
-  const [cartItems, setCartItems] = useState([]);
-
-  const [totalPrice, calculateTotalPrice] = useState('')
-  const addToLikedProducts = (productId) => {
-    setLikedProducts((prevLikedProducts) => [...prevLikedProducts, productId]);
-  };
-
-  const addToCart = (product) => {
-    setCartItems((prevCartItems) => [...prevCartItems, product]);
-  };
-
-  const removeFromCart = (productId) => {
-    setCartItems((prevCartItems) =>
-      prevCartItems.filter((item) => item.id !== productId)
-    );
-  };
-
-   useEffect( () => {
-           let totalPrice = 0;
-            cartItems.forEach((item) => {
-              totalPrice += item.price * item.quantity;
-           });
-            return totalPrice;
-          }, []
-  )
-    
-
+  const [state, dispatch] = useReducer(userReducer, initialState);
 
   return (
-    <UserContext.Provider
-      value={{
-        loggedIn,
-        setLoggedIn,
-        user,
-        setUser,
-        likedProducts,
-        addToLikedProducts,
-        cartItems,
-        addToCart,
-        removeFromCart,
-        totalPrice,
-        calculateTotalPrice,
-      }}
-    >
+    <UserContext.Provider value={{ state, dispatch }}>
       {children}
     </UserContext.Provider>
   );

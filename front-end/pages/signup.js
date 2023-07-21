@@ -1,11 +1,10 @@
 import Link from "next/link"
-import { useUser } from "../utils/contexts/userContext"
+import { useUser } from "../utils/contexts/userContext";
 import { useRouter } from "next/router";
 
 export default function signup () {
+const {dispatch} = useUser();
 
-  const { setUser,setLoggedIn } = useUser();
-  
   const router = useRouter();
      // Handles the submit event on form submit.
 
@@ -52,24 +51,11 @@ export default function signup () {
       
  
           // Store login status in local storage
-    // localStorage.setItem('loggedIn', JSON.stringify(true));
-
-    // Store login status in local storage
-    // localStorage.setItem('loggedIn', JSON.stringify(true));
-
-
-
-      // Redirect to authenticated route or show success message
-      // Update the user state with server response
-    // If login is successful, update the user state with server response
- setUser(result.user);
+    // localStorage.setItem('loggedIn', true);
 
     // Update the login status state
-    setLoggedIn(true);
-
-
-    // If login is successful, store authentication status in local storage
-    localStorage.setItem(isLoggedIn);
+    // Perform login logic, if successful dispatch LOGIN action
+    dispatch({ type: 'LOGIN', type:'SET_USER' });
 
     // Redirect to products page
     router.push('/onboarding');

@@ -19,6 +19,8 @@
   .email {
     position: relative;
     font-weight: 500;
+     appearance: none;
+    border-radius: 0;
   }
   .emailWrapper,
   .passwordWrapper {
@@ -39,6 +41,7 @@
     top: 518px;
   }
   .afrikanLover {
+    
     position: relative;
     font-weight: 600;
   }
