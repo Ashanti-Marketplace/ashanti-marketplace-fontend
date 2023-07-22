@@ -20,6 +20,8 @@ const { dispatch } = useUser();
       pwd: event.target.password.value,
     }
   
+    alert(data)
+    router.push('/products');
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data)
  

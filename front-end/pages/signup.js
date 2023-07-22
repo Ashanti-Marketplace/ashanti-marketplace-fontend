@@ -57,7 +57,7 @@ const {dispatch} = useUser();
     // Perform login logic, if successful dispatch LOGIN action
     dispatch({ type: 'LOGIN', type:'SET_USER' });
 
-    // Redirect to products page
+    // Redirect to onboarding
     router.push('/onboarding');
     } else {
       // Handle login error, show error message, etc.

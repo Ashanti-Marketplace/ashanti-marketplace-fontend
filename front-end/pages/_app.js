@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }) {
 
     //redirect to login page if not authentivated and the route requires authentication
     if(!authCode && !excludedPages.includes(router.pathname)){
+      alert('please login ')
       router.push('/login')
     }
   }, []);

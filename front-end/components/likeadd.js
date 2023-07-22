@@ -1,15 +1,18 @@
-import React from 'react'
-const { likedProducts, addToLikedProducts, addToCart } = useUser();
 
-  const handleLike = (productId) => {
-    addToLikedProducts(productId);
-  };
-
-  const handleAddToCart = (product) => {
-    addToCart(product);
-  };
+import { useUser } from '../utils/contexts/userContext';
 
 
+const { dispatch } = useUser();
+
+function handleLike(){
+  dispatch({type: 'ADD_TO_LIKED_PRODUCTS'})
+}
+
+ 
+
+function handleAddToCart(){
+  dispatch({ type: 'ADD_TO_CART'})
+}
 
 
   
