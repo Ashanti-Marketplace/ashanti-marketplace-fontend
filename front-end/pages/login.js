@@ -55,7 +55,7 @@ const { dispatch } = useUser();
 
    // Update the login status state
     // Perform login logic, if successful dispatch LOGIN action
-    dispatch({ type: 'LOGIN', type:'SET_USER' });
+    dispatch({ type: 'SET_AUTH_STATUS' });
 
     // Redirect to products page
     router.push('/products');
@@ -128,3 +128,22 @@ const { dispatch } = useUser();
 export default Login;
 
  
+
+// import { useUser } from './UserProvider';
+
+// const MyComponent = () => {
+//   const { state, dispatch } = useUser();
+
+//   const handleLogin = () => {
+//     // Simulate a login process and set the user
+//     const user = { id: 1, username: 'exampleuser' };
+//     dispatch({ type: 'SET_AUTH_STATUS', payload: { user, loggedIn: true } });
+//   };
+
+//   const handleLogout = () => {
+//     // Simulate a logout process and clear the user
+//     dispatch({ type: 'SET_AUTH_STATUS', payload: { user: null, loggedIn: false } });
+//   };
+
+//   // ... (rest of the component)
+// };

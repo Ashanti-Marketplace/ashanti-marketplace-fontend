@@ -1,12 +1,13 @@
 // pages/product/[productSlug].js
 
 import Product from '../../components/Product';
-import ProductFetcher from '../../utils/product-fetcher';
+import { useUser} from '../../utils/contexts/userContext';
 
+const { state } = useUser();
 export async function getStaticPaths() {
   // Fetch the list of product slugs from your API or data source
   // Replace this with your actual data fetching logic
-  const product = await ProductFetcher(productSlug);
+  const product = await state.product.find(productSlug);
 
   // Map the product slugs to the `params` object required for the dynamic routes
   const paths = productSlugs.map((slug) => ({
@@ -21,7 +22,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const productSlug = params.productSlug;
-  const product = await ProductFetcher(productSlug);
+  const product = await state.product.find(productSlug);
 
   return {
     props: {

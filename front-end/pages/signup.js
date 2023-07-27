@@ -89,7 +89,7 @@ const {dispatch} = useUser();
     </div>
     <div className="border-solid border-white flex flex-col justify-center h-12 shrink-0 items-start mb-4 mr-20 border-t-0 border-b border-x-0">
       <input  type="text"  name=" name" id="name" className="text-2xl font-['Inter'] font-medium text-white w-16" placeholder="Name" required/>
-      
+
     </div>
     <div className="border-solid border-white flex flex-col justify-center h-12 shrink-0 items-start mb-4 mr-20 border-t-0 border-b border-x-0">
     <input  type="email"  name=" email" id="email" className="text-2xl font-['Inter'] font-medium text-white w-16" placeholder="E-mail" required/>
