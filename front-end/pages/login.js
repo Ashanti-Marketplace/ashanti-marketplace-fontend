@@ -49,10 +49,13 @@ const Login = () => {
         // Redirect to products page
         router.push("/products");
       } else {
+        //user doesnt exist
+        router.replace('/signup')
         throw new Error();
         // Handle login error, show error message, etc.
       }
     } catch (error) {
+      
       console.log(error.response);
     }
   };

@@ -23,7 +23,7 @@ const userReducer = (state, action) => {
       return { ...state, user, loggedIn: isLoggedIn };
     
     case 'LOGOUT':
-      return { ...state, loggedIn: false };
+      return { ...state, user:null, loggedIn: false };
    
       case 'SET_PRODUCTS':
           return { ...state, products: action.payload };
@@ -98,33 +98,44 @@ export const getAllProducts = async () => {
 
 export const UserProvider = ({ children }) => {
     const [state, dispatch] = useReducer(userReducer, initialState);
+   // Fetch products when the component mounts
     useEffect(() => {
-        // Fetch products when the component mounts
+        
         fetchProducts()
             .then((data) => dispatch({ type: 'SET_PRODUCTS', payload: data }))
             .catch((error) => console.error(error));
     }, []); // Run the effect only once on mount
 
-    const handleUploadButtonClick = async () => {
+
+
+    // upload art functionality
+    const handleUploadButtonClick = async (event) => {
+      //stop the form from refreshing the page
+         event.preventDefault()
+     
       // Simulate an upload and set details
-      const uploadedDescription = 'Sample description';
-      const uploadedArtistName = 'Sample artist name';
-      const uploadedPricing = 'Sample pricing';
-  
+        const data = {
+           uploadedDescription: 'Sample description',
+           uploadedArtistName: 'Sample artist name',
+           uploadedPricing :'Sample pricing'
+      
+
+        }
+     
       dispatch({
         type: 'SET_DETAILS',
-        payload: { description: uploadedDescription, artistName: uploadedArtistName, pricing: uploadedPricing },
+        payload: data,
       });
   
 
 
-
+ // Save the data to the backend whenever description, artistName, or pricing changes
       useEffect(async () => {
-        // Save the data to the backend whenever description, artistName, or pricing changes
+       
         await saveDataToBackend({
-          description: uploadedDescription,
-          artistName: uploadedArtistName,
-          pricing: uploadedPricing,
+          description: data.uploadedDescription,
+          artistName: data.uploadedArtistName,
+          pricing: data.uploadedPricing,
         });
         if (isUploadSuccess) {
           dispatch({ type: 'UPLOAD_TO_SERVER_SUCCESS' });
@@ -132,7 +143,7 @@ export const UserProvider = ({ children }) => {
           // Handle upload failure, if needed
         }
 
-      }, [state.description, state.artistName, state.pricing]);
+      }, [description, artistName,pricing ]);
     
     };
     

@@ -1,16 +1,16 @@
 import Link from "next/link"
 import { useUser } from "../utils/contexts/userContext";
 import { useRouter } from "next/router";
+import { redirect } from "next/dist/server/api-utils";
 
 export default function signup () {
-const {dispatch} = useUser();
+const {dispatch} = useUser(),
+ router = useRouter();
 
-  const router = useRouter();
      // Handles the submit event on form submit.
-
   const handleSubmit = async (event) => {
-    // Stop the form from submitting and refreshing the page.
-    event.preventDefault()
+    
+    event.preventDefault(); // Stop the form from submitting and refreshing the page.
 
     try {
        // Get data from the form.
@@ -18,13 +18,13 @@ const {dispatch} = useUser();
       name: event.target.name.value,
       email: event.target.email.value,
       pwd: event.target.password.value
-    }
+    };
 
     console.log(data);
  
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data)
-  console.log(JSONdata);
+     console.log(JSONdata);
     // API endpoint where we send form data.
     const endpoint = '/api/form'
  
@@ -40,26 +40,29 @@ const {dispatch} = useUser();
       body: JSONdata,
     }
  
-    // Send the form data to our forms API on Vercel and get a response.
+    // Send the form data to our forms API  and get a response.
     const response = await fetch(endpoint, options)
  
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
     alert(`Is this your full name: ${result.data}`)
-    if (result.ok) {
+    if (result.ok && result.message != 'user exists') {
       
- 
-          // Store login status in local storage
+            // Store login status in local storage
     // localStorage.setItem('loggedIn', true);
 
     // Update the login status state
     // Perform login logic, if successful dispatch LOGIN action
-    dispatch({ type: 'LOGIN', type:'SET_USER' });
+    dispatch({ type:'SET_AUTH_STATUS' });
 
     // Redirect to onboarding
     router.push('/onboarding');
+      
+         
     } else {
+      alert('user exits, login intead')
+      router.replace('/login')
       // Handle login error, show error message, etc.
       
   } 
