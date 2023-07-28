@@ -6,8 +6,8 @@ const UserContext = createContext();
 
 const initialState = {
   loggedIn: false,
-    user: null,
-    products: [],
+  user: null,
+  products: [],
   likedProducts: [],
   cartItems: [],
   totalPrice: '',
@@ -47,6 +47,15 @@ const userReducer = (state, action) => {
           artistName: action.payload.artistName,
           pricing: action.payload.pricing,
         };
+
+        case 'UPLOAD_TO_SERVER_SUCCESS':
+          return {
+            ...state,
+            description: '',
+            artistName: '',
+            pricing: '',
+          };
+    
     default:
       return state;
   }
@@ -64,10 +73,20 @@ const saveDataToBackend = async (data) => {
       },
       body: JSON.stringify(data),
     });
+    
+    return true; // Return true on successful upload
   } catch (error) {
+    
     console.error('Error while saving data to the backend:', error);
+    return false; // Return false on upload failure
+
   }
+
 };
+
+
+
+  
 const getProductById = async (productId) => {
     return state.products.find((product) => product.id === productId);
 };
@@ -86,32 +105,38 @@ export const UserProvider = ({ children }) => {
             .catch((error) => console.error(error));
     }, []); // Run the effect only once on mount
 
-
-    const setDetails = (description, artistName, pricing) => {
-      dispatch({
-        type: 'SET_DETAILS',
-        payload: { description, artistName, pricing },
-      });
-    };
-  
-    const handleUploadButtonClick = () => {
+    const handleUploadButtonClick = async () => {
       // Simulate an upload and set details
       const uploadedDescription = 'Sample description';
       const uploadedArtistName = 'Sample artist name';
       const uploadedPricing = 'Sample pricing';
   
-      setDetails(uploadedDescription, uploadedArtistName, uploadedPricing);
-    };
-
-    useEffect(() => {
-      // Save the data to the backend whenever description, artistName, or pricing changes
-      saveDataToBackend({
-        description: state.description,
-        artistName: state.artistName,
-        pricing: state.pricing,
+      dispatch({
+        type: 'SET_DETAILS',
+        payload: { description: uploadedDescription, artistName: uploadedArtistName, pricing: uploadedPricing },
       });
-    }, [state.description, state.artistName, state.pricing]);
   
+
+
+
+      useEffect(async () => {
+        // Save the data to the backend whenever description, artistName, or pricing changes
+        await saveDataToBackend({
+          description: uploadedDescription,
+          artistName: uploadedArtistName,
+          pricing: uploadedPricing,
+        });
+        if (isUploadSuccess) {
+          dispatch({ type: 'UPLOAD_TO_SERVER_SUCCESS' });
+        } else {
+          // Handle upload failure, if needed
+        }
+
+      }, [state.description, state.artistName, state.pricing]);
+    
+    };
+    
+   
 
   return (
     <UserContext.Provider value={{ state, dispatch }}>
