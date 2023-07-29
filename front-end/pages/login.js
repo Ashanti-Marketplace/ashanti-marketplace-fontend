@@ -50,12 +50,11 @@ const Login = () => {
         router.push("/products");
       } else {
         //user doesnt exist
-        router.replace('/signup')
+        router.replace("/signup");
         throw new Error();
         // Handle login error, show error message, etc.
       }
     } catch (error) {
-      
       console.log(error.response);
     }
   };
