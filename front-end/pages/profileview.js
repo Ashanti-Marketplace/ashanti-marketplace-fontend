@@ -1,7 +1,7 @@
 import React from 'react'
 import withAuth from '../utils/withAuth'
 
-import styles from "./index.module.css";
+import styles from "../styles/profileview.module.css";
 const MyProfileView = () => {
   return (
     <div className={styles.myProfileView}>

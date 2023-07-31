@@ -15,10 +15,10 @@ const Login = () => {
       // Get data from the form.
       const data = {
         email: event.target.email.value,
-        pwd: event.target.password.value,
+        pwd:  event.target.password.value,
       };
 
-      alert(data); //testing the form
+      alert(data.pwd); //testing the form
 
       const JSONdata = JSON.stringify(data), // Send the data to the server in JSON format.
         endpoint = "/api/form"; // API endpoint where we send form data.

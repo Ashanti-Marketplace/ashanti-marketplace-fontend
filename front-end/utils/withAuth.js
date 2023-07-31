@@ -1,13 +1,15 @@
 "use client"
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import {useUser } from '../utils/contexts/userContext'
 
 const withAuth = (WrappedComponent)=> {
       const WrapperComponent =(props) => {
-        const router = useRouter();
+          const router = useRouter();
+              //{ state } = useUser();
 
-        //Retrieve the authorization code from local storage
-        const authCode = localStorage.getItem('isLoggedIn');
+        //Retrieve the authorization code from state
+        const authCode = state.getItem('isLoggedIn');
                        
         useEffect(()=>{
             //redirect to login page if the user is not authenticated
