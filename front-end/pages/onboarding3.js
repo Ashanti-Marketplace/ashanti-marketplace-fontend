@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from "./index.module.css";
+//import styles from "./index.module.css";
 const Onboarding3 = () => {
   return (
     <div className={styles.onboarding3}>

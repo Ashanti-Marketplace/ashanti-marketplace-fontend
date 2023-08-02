@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "../styles/upload2.module.css";
 const UploadArt2 = () => {
   return (
     <div className={styles.uploadArt2}>

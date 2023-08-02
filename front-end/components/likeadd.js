@@ -25,6 +25,7 @@ export const like = () => {
         {likedProducts.includes(product.id) ? 'Liked' :  <img
     src="https://file.rendit.io/n/cn6pwerXjC0vINwvuDGx.svg"
     className="min-h-0 min-w-0 w-8 shrink-0"
+    
   />}
       </button>
      

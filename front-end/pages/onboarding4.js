@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+//import styles from "./index.module.css";
 const Onboarding4 = () => {
   return (
     <div className={styles.onboarding4}>
