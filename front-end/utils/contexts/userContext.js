@@ -23,11 +23,14 @@ const initialState = {
   description: "",
   artistName: "",
   pricing: "",
-  step1Data: { name: '', email: '' },
-   step2Data: { address: '', city: '' },
+  step1Data: { name: "", email: "" },
+  step2Data: { address: "", city: "" },
   step3Images: [],
+  pagination: {
+    currentPage: 1,
+    itemsPerPage: 10,
+  },
 };
-
 const userReducer = (state, action) => {
   switch (action.type) {
     case "SET_AUTH_STATUS":
@@ -48,7 +51,7 @@ const userReducer = (state, action) => {
       return { ...state, products: action.payload };
 
     case "ADD_TO_LIKED_PRODUCTS":
-      if (state.likedProducts.some(item => item.id === action.payload.id)) {
+      if (state.likedProducts.some((item) => item.id === action.payload.id)) {
         return state;
       }
       return {
@@ -57,7 +60,7 @@ const userReducer = (state, action) => {
       };
 
     case "ADD_TO_CART":
-      if (state.cartItems.some(item => item.id === action.payload.id)) {
+      if (state.cartItems.some((item) => item.id === action.payload.id)) {
         return state;
       }
       return { ...state, cartItems: [...state.cartItems, action.payload] };
@@ -84,12 +87,19 @@ const userReducer = (state, action) => {
         pricing: "",
       };
 
-      case 'SET_STEP1_DATA':
-               return { ...state, step1Data: action.payload };
-      case 'SET_STEP2_DATA':
-              return { ...state, step2Data: action.payload };
-      case 'SET_STEP3_IMAGES':
-            return { ...state, step3Images: action.payload };
+    case "SET_STEP1_DATA":
+      return { ...state, step1Data: action.payload };
+    case "SET_STEP2_DATA":
+      return { ...state, step2Data: action.payload };
+    case "SET_STEP3_IMAGES":
+      return { ...state, step3Images: action.payload };
+
+    case "SET_CURRENT_PAGE":
+      return {
+        ...state,
+        pagination: { ...state.pagination, currentPage: action.payload },
+      };
+
     default:
       return state;
   }
@@ -105,7 +115,6 @@ const userReducer = (state, action) => {
 // }, [initialState.cartItems]);
 
 // Use the 'totalPrice' variable in the component where it's needed
-
 
 //save uploaded data to backend
 
@@ -144,6 +153,15 @@ export const UserProvider = ({ children }) => {
       .catch((error) => console.error(error));
   }, []); // Run the effect only once on mount
 
+  // Pagination logic
+  const currentPageData = useMemo(() => {
+    const { currentPage, itemsPerPage } = state.pagination;
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return state.products.slice(startIndex, endIndex);
+  }, [state.products, state.pagination]);
+
+  const totalPages = Math.ceil(state.products.length / state.pagination.itemsPerPage);
 
   // upload art functionality
   const handleUploadButtonClick = async (event) => {
@@ -200,7 +218,6 @@ export const useUser = () => {
   // }
   return context;
 };
-
 
 // AppContext.js
 // import React, { createContext, useReducer, useContext } from 'react';
