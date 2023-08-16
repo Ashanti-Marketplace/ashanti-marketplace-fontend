@@ -1,6 +1,9 @@
+/* The code is importing various hooks and functions from the React library, as well as some custom
+functions from other files. It then defines a UserContext using the createContext() function. */
 import {
   createContext,
   useState,
+  useMemo,
   useEffect,
   useContext,
   useReducer,
@@ -20,16 +23,22 @@ const initialState = {
   description: "",
   artistName: "",
   pricing: "",
+  step1Data: { name: '', email: '' },
+   step2Data: { address: '', city: '' },
+  step3Images: [],
 };
 
 const userReducer = (state, action) => {
   switch (action.type) {
     case "SET_AUTH_STATUS":
       const { user, isLoggedIn } = action.payload;
+      if (state.user === user && state.loggedIn === isLoggedIn) {
+        return state;
+      }
       return {
         ...state,
         user,
-        loggedIn: localStorage.setItem("loggedIn", isLoggedIn),
+        loggedIn: isLoggedIn,
       };
 
     case "LOGOUT":
@@ -37,24 +46,27 @@ const userReducer = (state, action) => {
 
     case "SET_PRODUCTS":
       return { ...state, products: action.payload };
+
     case "ADD_TO_LIKED_PRODUCTS":
+      if (state.likedProducts.some(item => item.id === action.payload.id)) {
+        return state;
+      }
       return {
         ...state,
         likedProducts: [...state.likedProducts, action.payload],
       };
+
     case "ADD_TO_CART":
+      if (state.cartItems.some(item => item.id === action.payload.id)) {
+        return state;
+      }
       return { ...state, cartItems: [...state.cartItems, action.payload] };
+
     case "REMOVE_FROM_CART":
       return {
         ...state,
         cartItems: state.cartItems.filter((item) => item.id !== action.payload),
       };
-    case "CALCULATE_TOTAL_PRICE":
-      let totalPrice = 0;
-      state.cartItems.forEach((item) => {
-        totalPrice += item.price * item.quantity;
-      });
-      return { ...state, totalPrice: totalPrice.toFixed(2) };
 
     case "SET_DETAILS":
       return {
@@ -72,34 +84,28 @@ const userReducer = (state, action) => {
         pricing: "",
       };
 
+      case 'SET_STEP1_DATA':
+               return { ...state, step1Data: action.payload };
+      case 'SET_STEP2_DATA':
+              return { ...state, step2Data: action.payload };
+      case 'SET_STEP3_IMAGES':
+            return { ...state, step3Images: action.payload };
     default:
       return state;
   }
 };
 
-//handle login to server
-const loginToserver = async (data) => {
-  try {
-    const JSONdata = JSON.stringify(data), // Send the data to the server in JSON format.
-      endpoint = "/api/form"; // API endpoint where we send form data.
+// Calculate the total price in the component or a selector when it's needed
+// const totalPrice = useMemo(() => {
+//   let totalPrice = 0;
+//   state.cartItems.forEach((item) => {
+//     totalPrice += item.price * item.quantity;
+//   });
+//   return totalPrice.toFixed(2);
+// }, [initialState.cartItems]);
 
-    // Form the request for sending data to the server.
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+// Use the 'totalPrice' variable in the component where it's needed
 
-    const response = await fetch(endpoint, options), // Send the form data to our forms API  and get a response.
-      result = await response.json(); // Get the response data from server as JSON. If server returns the name submitted, that means the form works.
-    return true;
-    alert(`Is this your full name: ${result.data}`);
-  } catch (error) {
-    return false;
-  }
-};
 
 //save uploaded data to backend
 
@@ -138,49 +144,6 @@ export const UserProvider = ({ children }) => {
       .catch((error) => console.error(error));
   }, []); // Run the effect only once on mount
 
-  //handle login
-  const handleLogin = (event) => {
-    // prebent login form form refreshing the page
-
-    event.preventDefault();
-
-    //data entery from form
-    try {
-      const data = {
-        email: event.target.email.value,
-        pwd: event.target.password.value,
-      };
-
-      alert(data.email);
-
-      //save to backend on submit
-      useEffect(async () => {
-        await loginToserver(data);
-        if (result.ok) {
-          console.log(result);
-          // If login is successful, store authentication status in local storage
-          //localStorage.setItem('isLoggedIn', true);
-
-          // If login is successful, update the user state with server response Update the login status state
-
-          dispatch({
-            type: "SET_AUTH_STATUS",
-            payload: { data, loggedIn: true },
-          });
-
-          // Redirect to products page
-          router.push("/products");
-        } else {
-          //user doesnt exist
-          router.replace("/signup");
-          throw new Error();
-          // Handle login error, show error message, etc.
-        }
-      }, [data]);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   // upload art functionality
   const handleUploadButtonClick = async (event) => {
