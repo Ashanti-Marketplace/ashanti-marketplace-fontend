@@ -5,28 +5,25 @@ import styles from "../styles/login.module.css";
 
 // login page
 const Login = () => {
-  const {handleLogin} = useUser(),
-   { state, dispatch } = useUser(),
+  const { state, dispatch } = useUser(),
     router = useRouter();
 
   // Handles the submit event on form submit.
   const handleSubmit = async (event) => {
-       
-    
     event.preventDefault(); // Stop the form from submitting and refreshing the page.
     try {
       // Get data from the form.
       const data = {
         email: event.target.email.value,
-        pwd:  event.target.password.value,
+        pwd: event.target.password.value,
       };
 
-       dispatch({
-        type: "SET_AUTH_STATUS",
-        payload: {  data, loggedIn: true },
-       });
+      //  dispatch({
+      //   type: "SET_AUTH_STATUS",
+      //   payload: {  data, loggedIn: true },
+      //  });
 
-      console.log(dispatch)
+      // console.log(dispatch)
       alert(data.pwd); //testing the form
 
       const JSONdata = JSON.stringify(data), // Send the data to the server in JSON format.
@@ -40,10 +37,10 @@ const Login = () => {
         },
         body: JSONdata,
       };
-      alert('sendinfin to server'); //testing the form
-      const response = await fetch(endpoint, options) // Send the form data to our forms API  and get a response.
-       alert('awaiting response')
-       console.log(response)
+      alert("sendinfin to server"); //testing the form
+      const response = await fetch(endpoint, options); // Send the form data to our forms API  and get a response.
+
+      console.log(response);
       const result = await response.json(); // Get the response data from server as JSON. If server returns the name submitted, that means the form works.
       alert(`Is this your full name: ${result.data.name}`);
       if (result.ok) {
@@ -61,14 +58,14 @@ const Login = () => {
         router.push("/products");
       } else {
         //user doesnt exist
-        alert('no response')
+        alert("no response");
         router.replace("/signup");
         throw new Error();
         // Handle login error, show error message, etc.
       }
-      alert('no response')
+      alert("no response");
     } catch (error) {
-      alert('errrrorrrr')
+      alert("errrrorrrr");
       console.log(error);
     }
   };

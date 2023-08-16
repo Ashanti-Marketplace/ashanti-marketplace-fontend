@@ -1,0 +1,396 @@
+/* styles.module.css */
+
+/* :root {
+  --base-font-size: 16px;
+} */
+
+/* General styles for all viewports */
+.homePage {
+    position: relative;
+    background-color: #090e0b;
+    width: 100%;
+    height: 6471px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1rem; /* Converted from var(--font-size-xl) */
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  
+  .container {
+    max-width: 60rem; /* Converted from 960px */
+    margin: 0 auto;
+    padding: 0.78125rem; /* Converted from 12.5px */
+  }
+  
+  /* General styles for all viewports */
+  .featured,
+  .letsGetYou,
+  .log0,
+  .welcomeBack,
+  .artsFromThe,
+  .viewOurMarket,
+  .ourCategroies,
+  .supportTheArtists,
+  .signUpFor,
+  .wellKeepYou {
+    position: absolute;
+    font-size: 0.9375rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+  }
+  
+  /* General styles for all viewports */
+  .homePageChild,
+  .homePageChild1,
+  .homePageItem,
+  .rectangleIcon,
+  .homePageChild2,
+  .homePageChild3,
+  .homePageChild4,
+  .homePageChild5,
+  .afrikanLoverWrapper,
+  .homePageChild6,
+  .homePageChild8,
+  .frameParent13 {
+    position: absolute;
+    border-radius: 0.3125rem; /* Converted from var(--br-5xs) */
+  }
+  
+  /* General styles for all viewports */
+  .artsFromThe1,
+  .artsFromThe2 {
+    position: absolute;
+    font-size: 3.125rem; /* Converted from var(--font-size-5xl) */
+  }
+  
+  /* General styles for all viewports */
+  .frameChild,
+  .heartIcon,
+  .raisingGodlyChildren {
+    position: relative;
+  }
+  
+  /* General styles for all viewports */
+  .frameGroup,
+  .frameParent,
+  .modernTheFutureParent,
+  .rectangleParent,
+  .rectangleGroup,
+  .rectangleContainer,
+  .blackArtLadyParent,
+  .frameDiv,
+  .rectangleParent1,
+  .rectangleParent2,
+  .rectangleParent3,
+  .frameParent4,
+  .rectangleParent10,
+  .rectangleParent11,
+  .afrikanLoverWrapper1,
+  .searchForAfrikanVibesWrapper,
+  .afrikanLoverWrapper2,
+  .frameParent15,
+  .frameParent14 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  /* General styles for all viewports */
+  .lineDiv,
+  .frameChild12 {
+    position: absolute;
+  }
+  
+  /* General styles for all viewports */
+  .div,
+  .logoParent {
+    position: absolute;
+    font-size: 3.125rem; /* Converted from var(--font-size-5xl) */
+  }
+  
+  /* General styles for all viewports */
+  .instanceChild,
+  .instanceInner,
+  .instanceItem {
+    position: absolute;
+    background-color: var(--brand-color-10);
+  }
+  
+  /* General styles for all viewports */
+  .instanceChild2 {
+    position: absolute;
+    border-top: 0.0625rem solid var(--brand-color-10); /* Converted from 1px */
+    box-sizing: border-box;
+    width: 90.0625rem; /* Converted from 1441px */
+    height: 0.0625rem; /* Converted from 1px */
+  }
+  
+  /* Styles for smaller viewports */
+  @media (max-width: 48rem) {
+    .letsGetYou,
+    .log0,
+    .welcomeBack,
+    .emailWrapper,
+    .passwordWrapper,
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .dontHaveAnContainer1,
+    .artsFromThe,
+    .artsFromThe1,
+    .artsFromThe2,
+    .viewOurMarket,
+    .afrikanLoverContainer,
+    .afrikanLoverFrame,
+    .rectangleParent1,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11 {
+      left: 1rem; /* Converted from 20px */
+    }
+  
+    .emailWrapper,
+    .passwordWrapper,
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .rectangleParent1,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11 {
+      width: 100%; /* Converted from 535px, 33.438rem, etc. */
+    }
+  
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .afrikanLoverParent,
+    .rectangleParent,
+    .rectangleContainer,
+    .frameDiv,
+    .rectangleParent2,
+    .rectangleParent3,
+    .rectangleParent5,
+    .rectangleParent6,
+    .rectangleParent7,
+    .rectangleParent8,
+    .rectangleParent9,
+    .afrikanLoverWrapper1,
+    .searchForAfrikanVibesWrapper,
+    .afrikanLoverWrapper2,
+    .frameParent15,
+    .frameParent14 {
+      width: 25rem; /* Converted from 400px */
+      left: 1rem; /* Converted from 20px */
+    }
+  
+    .frameParent,
+    .rectangleGroup,
+    .rectangleContainer,
+    .blackArtLadyParent,
+    .frameDiv,
+    .rectangleParent1,
+    .rectangleParent2,
+    .rectangleParent3,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11,
+    .frameParent15,
+    .frameParent14 {
+      gap: 0.3125rem; /* Converted from var(--gap-5xs) */
+    }
+  
+    .afrikanLoverWrapper1,
+    .searchForAfrikanVibesWrapper,
+    .afrikanLoverWrapper2 {
+      padding: 1.25rem var(--padding-3xl); /* Converted from var(--padding-5xl) var(--padding-13xl) */
+    }
+  
+    .ourCategroies {
+      font-size: 1.125rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+    }
+  
+    .frameParent14 {
+      font-size: 1rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+    }
+  }
+  
+  /* Styles for medium viewports */
+  @media (min-width: 48.063rem) and (max-width: 64rem) {
+    .container {
+      padding: 0.625rem; /* Converted from 10px */
+    }
+  
+    .letsGetYou,
+    .log0,
+    .welcomeBack,
+    .emailWrapper,
+    .passwordWrapper,
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .dontHaveAnContainer1,
+    .artsFromThe,
+    .artsFromThe1,
+    .artsFromThe2,
+    .viewOurMarket,
+    .afrikanLoverContainer,
+    .afrikanLoverFrame,
+    .rectangleParent1,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11 {
+      left: 2rem; /* Converted from 40px */
+    }
+  
+    .emailWrapper,
+    .passwordWrapper,
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .rectangleParent1,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11 {
+      width: 12.5rem; /* Converted from 200px */
+    }
+  
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .afrikanLoverParent,
+    .rectangleParent,
+    .rectangleContainer,
+    .frameDiv,
+    .rectangleParent2,
+    .rectangleParent3,
+    .rectangleParent5,
+    .rectangleParent6,
+    .rectangleParent7,
+    .rectangleParent8,
+    .rectangleParent9,
+    .afrikanLoverWrapper1,
+    .searchForAfrikanVibesWrapper,
+    .afrikanLoverWrapper2,
+    .frameParent15,
+    .frameParent14 {
+      width: 50rem; /* Converted from 800px */
+      left: 2rem; /* Converted from 40px */
+    }
+  
+    .frameParent,
+    .rectangleGroup,
+    .rectangleContainer,
+    .blackArtLadyParent,
+    .frameDiv,
+    .rectangleParent1,
+    .rectangleParent2,
+    .rectangleParent3,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11,
+    .frameParent15,
+    .frameParent14 {
+      gap: 1.25rem; /* Converted from var(--gap-lg) */
+    }
+  
+    .afrikanLoverWrapper1,
+    .searchForAfrikanVibesWrapper,
+    .afrikanLoverWrapper2 {
+      padding: 2.5rem var(--padding-8xl); /* Converted from var(--padding-5xl) var(--padding-13xl) */
+    }
+  
+    .ourCategroies {
+      font-size: 1.25rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+    }
+  
+    .frameParent14 {
+      font-size: 1.125rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+    }
+  }
+  
+  /* Styles for larger viewports */
+  @media (min-width: 64.063rem) {
+    .container {
+      padding: 1.25rem; /* Converted from 20px */
+    }
+  
+    .letsGetYou,
+    .log0,
+    .welcomeBack,
+    .emailWrapper,
+    .passwordWrapper,
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .dontHaveAnContainer1,
+    .artsFromThe,
+    .artsFromThe1,
+    .artsFromThe2,
+    .viewOurMarket,
+    .afrikanLoverContainer,
+    .afrikanLoverFrame,
+    .rectangleParent1,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11 {
+      left: 2.5rem; /* Converted from 40px */
+    }
+  
+    .emailWrapper,
+    .passwordWrapper,
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .rectangleParent1,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11 {
+      width: 16.875rem; /* Converted from 270px */
+    }
+  
+    .afrikanLoverWrapper,
+    .afrikanLoverGroup,
+    .afrikanLoverParent,
+    .rectangleParent,
+    .rectangleContainer,
+    .frameDiv,
+    .rectangleParent2,
+    .rectangleParent3,
+    .rectangleParent5,
+    .rectangleParent6,
+    .rectangleParent7,
+    .rectangleParent8,
+    .rectangleParent9,
+    .afrikanLoverWrapper1,
+    .searchForAfrikanVibesWrapper,
+    .afrikanLoverWrapper2,
+    .frameParent15,
+    .frameParent14 {
+      width: 53.125rem; /* Converted from 850px */
+      left: 2.5rem; /* Converted from 40px */
+    }
+  
+    .frameParent,
+    .rectangleGroup,
+    .rectangleContainer,
+    .blackArtLadyParent,
+    .frameDiv,
+    .rectangleParent1,
+    .rectangleParent2,
+    .rectangleParent3,
+    .frameParent4,
+    .rectangleParent10,
+    .rectangleParent11,
+    .frameParent15,
+    .frameParent14 {
+      gap: 1.875rem; /* Converted from var(--gap-lgi) */
+    }
+  
+    .afrikanLoverWrapper1,
+    .searchForAfrikanVibesWrapper,
+    .afrikanLoverWrapper2 {
+      padding: 3.75rem var(--padding-13xl); /* Converted from var(--padding-5xl) var(--padding-13xl) */
+    }
+  
+    .ourCategroies {
+      font-size: 1.5625rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+    }
+  
+    .frameParent14 {
+      font-size: 1.25rem; /* Converted from var(--secondary-typeface-ubuntu-4-size) */
+    }
+  }
+  

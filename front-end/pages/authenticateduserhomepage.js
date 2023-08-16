@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import styles from "./index.module.css";
+import styles from "../styles/authuser.module.css";
 const HomePageWithUsersDetails = () => {
   const onFrameContainer3Click = useCallback(() => {
     // Please sync "Art details page" to the project

@@ -1,23 +1,52 @@
 // components/Step3.js
 import React, { useState } from 'react';
-import { useAppContext } from '../AppContext';
+import { useAppContext, useUser } from '../utils/contexts/userContext';
 import { useRouter } from 'next/router';
+import styles from "../styles/upload3.module.css";
+
 
 const Step3 = () => {
-  const { state, dispatch } = useAppContext();
+  const { state, dispatch } = useUser();
   const [uploadedImages, setUploadedImages] = useState([]);
   const router = useRouter();
 
-  const handleFileDrop = (e) => {
+   const handleFileDrop = (e) => {
     e.preventDefault();
     const files = e.dataTransfer.files;
-    // Process the uploaded image files as needed
-
-    // For this example, we are just storing the file names in state
-    const fileNames = Array.from(files).map((file) => file.name);
-    setUploadedImages(fileNames);
+     const fileNames = Array.from(files).map((file) => file.name);
+    if (files) {
+      displayImage(fileNames);
+    }
   };
 
+   const handleFileInput = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      displayImage(file);
+    }
+  };
+
+
+  const displayImage = (file) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      setUploadedImages(reader.result);
+    };
+    reader.readAsDataURL(file);
+  };
+
+
+  // const handleFileDrop = (e) => {
+  //   e.preventDefault();
+  //   const files = e.dataTransfer.files;
+  //   // Process the uploaded image files as needed
+
+  //   //  we are just storing the file names in state
+  //   const fileNames = Array.from(files).map((file) => file.name);
+  //   setUploadedImages(fileNames);
+  // };
+
+ 
   const handleUploadArtwork = async (e) => {
     e.preventDefault();
     try {
@@ -27,7 +56,8 @@ const Step3 = () => {
         step2Data: state.step2Data,
         step3Images: uploadedImages,
       };
-
+ alert(formData.step3Images)
+ console.log(formData.step3Images);
       // Send the form data to the server using an API call
       // For this example, we are using the fetch API
       const response = await fetch('/api/upload', {
@@ -55,27 +85,324 @@ const Step3 = () => {
 
   return (
     <div>
-      <h2>Step 3: Upload Artwork</h2>
+    
+
+
+
+
+
+
+
+
+
+      <div className={styles.uploadArt3}>
+      <div className={styles.frameParent}>
+        <div className={styles.log0Parent}>
+          <b className={styles.log0}>Log0</b>
+          <div className={styles.searchForAfrikanVibesParent}>
+            <div className={styles.searchForAfrikan}>
+              Search for afrikan vibes
+            </div>
+            <img
+              className={styles.materialSymbolssearchRoundeIcon}
+              alt=""
+              src="/materialsymbolssearchrounded.svg"
+            />
+          </div>
+          <div className={styles.createAccountParent}>
+            <div className={styles.createAccount}>
+              <div className={styles.createAccount1}>Buy</div>
+            </div>
+            <div className={styles.createAccount}>
+              <div className={styles.createAccount1}>Sell</div>
+            </div>
+          </div>
+          <div className={styles.icoutlineShoppingCartParent}>
+            <img
+              className={styles.materialSymbolssearchRoundeIcon}
+              alt=""
+              src="/icoutlineshoppingcart.svg"
+            />
+            <img
+              className={styles.materialSymbolssearchRoundeIcon}
+              alt=""
+              src="/mdiuseroutline.svg"
+            />
+          </div>
+        </div>
+        <div className={styles.frameChild} />
+      </div>
+      <div className={styles.logoParent}>
+        <div className={styles.logo}>Logo</div>
+        <div className={styles.marketplaceParent}>
+          <div className={styles.marketplace}>Marketplace</div>
+          <div className={styles.exploreParent}>
+            <div className={styles.searchForAfrikan}>Explore</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+          </div>
+        </div>
+        <div className={styles.marketplaceGroup}>
+          <div className={styles.marketplace}>Marketplace</div>
+          <div className={styles.exploreParent}>
+            <div className={styles.searchForAfrikan}>Explore</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+          </div>
+        </div>
+        <div className={styles.marketplaceContainer}>
+          <div className={styles.marketplace}>Marketplace</div>
+          <div className={styles.exploreParent}>
+            <div className={styles.searchForAfrikan}>Explore</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+            <div className={styles.searchForAfrikan}>Blah</div>
+          </div>
+        </div>
+        <div className={styles.frameItem} />
+        <div className={styles.div}>@2023</div>
+      </div>
+      <div className={styles.ellipseParent}>
+        <div className={styles.frameInner} />
+        <div className={styles.lineDiv} />
+        <div className={styles.frameInner} />
+        <div className={styles.lineDiv} />
+        <div className={styles.frameInner} />
+      </div>
+
+
+      
+      <div className={styles.contactInformation}>Contact Information</div>
+      <div className={styles.artDetails}>Art details</div>
+      <div className={styles.uploadImages}>Upload images</div>
+      <div className={styles.uploadPhotosOf}>Upload photos of your artwork</div>
+
+
       <div
-        onDrop={handleFileDrop}
+         onDrop={handleFileDrop}
         onDragOver={(e) => e.preventDefault()}
-        style={{ border: '1px dashed black', padding: '10px', marginBottom: '10px' }}
+        className={styles.dragAndDrop}
       >
         Drag and drop images here to upload
       </div>
-      {uploadedImages.length > 0 && (
-        <div>
-          <h3>Uploaded Images:</h3>
-          <ul>
+
+     <input
+        type="file"
+        id="fileInput"
+        style={{ display: 'none' }}
+        onChange={handleFileInput}
+      />
+
+
+      <div className={styles.afrikanLoverWrapper}>
+        <div className={styles.searchForAfrikan}>Upload Artworks</div>
+        <button onClick={displayImage}> Upload Artworks</button>
+      </div>
+      <div className={styles.pleaseUploadHighQuality}>
+        Please upload high-quality photos of the work’s front and back.
+      </div>
+      <div className={styles.afrikanLoverContainer}>
+        
+        <button className={styles.marketplace} onClick={handleUploadArtwork}> Submit Upload</button>
+      </div>
+      <div className={styles.uploadArt3Child} />
+      <div className={styles.uploadArt3Item} />
+
+      {/* <ul>
             {uploadedImages.map((imageName, index) => (
-              <li key={index}>{imageName}</li>
+              <li  className={styles.uploadArt3Inner}key={index}>{imageName}  
+               <div className={styles.jpg}>image</div></li>
             ))}
-          </ul>
-        </div>
-      )}
-      <button onClick={handleUploadArtwork}>Upload Artwork</button>
+          </ul> */}
+
+
+  < ul>
+      
+   { uploadedImages.map((imageName, index)=>(
+      <li>
+          <img
+           src={uploadedImages}
+          alt="Preview"
+           style={styles.uploArt3Inner}
+           key={index}
+       />
+       <div className={styles.jpg}>image</div>
+      </li>
+    ))} 
+    </ul>
+//         
+     
+      <img
+        className={styles.materialSymbolsdeleteOutlinIcon}
+        alt=""
+        src="/materialsymbolsdeleteoutlinerounded.svg"
+          />
+          
+      </div>
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };
 
 export default Step3;
+
+
+
+
+
+
+
+// import React from 'react';
+// import { useAppContext } from './AppProvider'; // Import the context hook
+
+// const ButtonComponent = () => {
+//   const { handleUploadButtonClick } = useAppContext(); // Access the handleUploadButtonClick function from the context
+
+//   const handleButtonClick = () => {
+//     // Perform any logic related to the upload process in this component
+//     // For simplicity, we are calling the handleUploadButtonClick function directly here
+//     handleUploadButtonClick();
+//   };
+
+//   return (
+//     <button onClick={handleButtonClick}>Upload</button>
+//   );
+// };
+
+
+
+//   const [previewImage, setPreviewImage] = useState(null);
+
+//   const handleDrop = (e) => {
+//     e.preventDefault();
+//     const file = e.dataTransfer.files[0];
+//     if (file) {
+//       displayImage(file);
+//     }
+//   };
+
+//   const handleFileInput = (e) => {
+//     const file = e.target.files[0];
+//     if (file) {
+//       displayImage(file);
+//     }
+//   };
+
+//   const displayImage = (file) => {
+//     const reader = new FileReader();
+//     reader.onload = () => {
+//       setPreviewImage(reader.result);
+//     };
+//     reader.readAsDataURL(file);
+//   };
+
+//   return (
+//     <div className="App">
+//       <div
+//         className="dropzone"
+//         onDrop={handleDrop}
+//         onDragOver={(e) => e.preventDefault()}
+//         onClick={() => document.getElementById('fileInput').click()}
+//       >
+//         <p>Click or drag and drop an image here</p>
+//       </div>
+
+//       <input
+//         type="file"
+//         id="fileInput"
+//         style={{ display: 'none' }}
+//         onChange={handleFileInput}
+//       />
+
+//       {previewImage && (
+//         <img
+//           src={previewImage}
+//           alt="Preview"
+//           style={{ maxWidth: '100%', maxHeight: '300px', marginTop: '20px' }}
+//         />
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+// import React, { useState } from 'react';
+// import './App.css';
+
+// function App() {
+//   const [previewImage, setPreviewImage] = useState(null);
+
+//   const handleDrop = (e) => {
+//     e.preventDefault();
+//     const file = e.dataTransfer.files[0];
+//     if (file) {
+//       displayImage(file);
+//     }
+//   };
+
+//   const handleFileInput = (e) => {
+//     const file = e.target.files[0];
+//     if (file) {
+//       displayImage(file);
+//     }
+//   };
+
+//   const handleSearch = () => {
+//     document.getElementById('fileInput').click();
+//   };
+
+//   const displayImage = (file) => {
+//     const reader = new FileReader();
+//     reader.onload = () => {
+//       setPreviewImage(reader.result);
+//     };
+//     reader.readAsDataURL(file);
+//   };
+
+//   return (
+//     <div className="App">
+//       <div
+//         className="dropzone"
+//         onDrop={handleDrop}
+//         onDragOver={(e) => e.preventDefault()}
+//         onClick={handleSearch}
+//       >
+//         <p>Click or drag and drop an image here</p>
+//       </div>
+
+//       <input
+//         type="file"
+//         id="fileInput"
+//         style={{ display: 'none' }}
+//         onChange={handleFileInput}
+//       />
+
+//       {previewImage && (
+//         <img
+//           src={previewImage}
+//           alt="Preview"
+//           style={{ maxWidth: '100%', maxHeight: '300px', marginTop: '20px' }}
+//         />
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+

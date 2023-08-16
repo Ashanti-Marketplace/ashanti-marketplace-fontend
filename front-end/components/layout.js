@@ -1,14 +1,23 @@
 
-
+import Head from 'next/head'
 import Link from "next/link";
-import styles from "../styles/homePage.module.css";
+import styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
   return (
     <div className={styles.homePage}>
-         
-      
-      <nav className={styles.frameParent13}>
+         <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Learn how to build a personal website using Next.js"
+        />
+       
+        <meta name="og:title"  />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+       <header className={styles.frameParent13}>
+      <nav >
         <div className={styles.log0Parent}>
           <b className={styles.log0}>Log0</b>
           <div className={styles.searchForAfrikanVibesParent}>
@@ -44,7 +53,7 @@ const Layout = ({ children }) => {
         </div>
         <div className={styles.frameChild12} />
       </nav>
-      
+      </header>
      <main> {children} </main> 
     
 

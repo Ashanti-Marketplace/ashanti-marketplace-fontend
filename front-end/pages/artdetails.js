@@ -1,4 +1,4 @@
-import styles from "../styles/";
+import styles from "../styles/artDetails.module.css";
 const ArtDetailsPage = () => {
   return (
     <div className={styles.artDetailsPage}>
