@@ -14,6 +14,7 @@ npm >= 6.0.0
 
 **Setup**
 
+
 Follow these steps to set up and run the Next.js frontend component:
 
 1. Clone the repository from GitHub:
