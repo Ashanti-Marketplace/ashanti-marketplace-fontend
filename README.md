@@ -5,6 +5,7 @@ Ashanti Marketplace - Next.js Frontend(Next.js 13)
 Ashanti Marketplace is a web application built with Next.js that allows users to buy and sell art. This frontend component interacts with the Laravel-based backend to provide a seamless user experience.
 
 **Dependencies**
+
 To run the Next.js frontend component, make sure you have the following dependencies installed on your system:
 
 Node.js >= 14.0.0
