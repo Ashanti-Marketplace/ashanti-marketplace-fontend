@@ -62,6 +62,10 @@ The application includes a real-time search functionality that filters products 
 **Pagination**
 
 The app also features pagination for the product listings, allowing users to navigate through multiple pages of products. The "Previous" and "Next" buttons facilitate easy navigation.
-**
-License**
+
+
+
+**License**
+
+
 This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
