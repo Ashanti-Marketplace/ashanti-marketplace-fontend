@@ -13,6 +13,7 @@ npm >= 6.0.0
 
 
 **Setup**
+
 Follow these steps to set up and run the Next.js frontend component:
 
 1. Clone the repository from GitHub:
@@ -50,13 +51,16 @@ npm run dev
 6. Open the application in your web browser at http://localhost:3000.
 
 **Usage**
+
 The Ashanti Marketplace frontend provides a user-friendly interface for buying and selling art. Users can browse art listings, view details, add items to their cart, and proceed to checkout.
 
 **Search Functionality**
+
 The application includes a real-time search functionality that filters products based on the entered search term. As you type, the displayed products will dynamically update to match the search.
 
 **Pagination**
-The app also features pagination for the product listings, allowing users to navigate through multiple pages of products. The "Previous" and "Next" buttons facilitate easy navigation.
 
-License
+The app also features pagination for the product listings, allowing users to navigate through multiple pages of products. The "Previous" and "Next" buttons facilitate easy navigation.
+**
+License**
 This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
