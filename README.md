@@ -9,7 +9,7 @@ To run the Next.js frontend component, make sure you have the following dependen
 
 Node.js >= 14.0.0
 npm >= 6.0.0
-
+Next.js 13
 Setup
 Follow these steps to set up and run the Next.js frontend component:
 
