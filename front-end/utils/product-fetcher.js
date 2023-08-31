@@ -23,6 +23,6 @@ export const cartProducts = async () => {
         }
         return await response.json();
     } catch (error) {
-        
+        throw new Error('error fetching cart items')
     }
 }
