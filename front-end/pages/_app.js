@@ -9,7 +9,7 @@ import { UserProvider,useUser } from '../utils/contexts/userContext';
 
 export default function App({ Component, pageProps }) {
     const router = useRouter();
-    const state  = useUser();
+    // const state  = useUser();
 
   useEffect(()=>{
     

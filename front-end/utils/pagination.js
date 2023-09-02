@@ -1,5 +1,5 @@
 import React from "react";
-import { useUser } from "./contexts/userContext";
+import { useUser } from "./contexts/userContext";cd 
  // Inside a component
 
 

@@ -1,6 +1,6 @@
 /* The code is importing various hooks and functions from the React library, as well as some custom
 functions from other files. It then defines a UserContext using the createContext() function. */
-import {
+import React,{
   createContext,
   useState,
   useMemo,
@@ -118,34 +118,18 @@ const userReducer = (state, action) => {
 
 //save uploaded data to backend
 
-const saveDataToBackend = async (data) => {
-  try {
-    // Assuming the backend API URL is '/api/saveData'
-    await fetch("/api/saveData", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
 
-    return true; // Return true on successful upload
-  } catch (error) {
-    console.error("Error while saving data to the backend:", error);
-    return false; // Return false on upload failure
-  }
-};
+// const getProductById = async (productId) => {
+//   return state.products.find((product) => product.id === productId);
+// };
 
-const getProductById = async (productId) => {
-  return state.products.find((product) => product.id === productId);
-};
-
-export const getAllProducts = async () => {
-  return state.products;
-};
+// export const getAllProducts = async () => {
+//   return state.products;
+// };
 
 export const UserProvider = ({ children }) => {
   const [state, dispatch] = useReducer(userReducer, initialState);
+  
   // Fetch products when the component mounts
   useEffect(() => {
     fetchProducts()
@@ -163,107 +147,26 @@ export const UserProvider = ({ children }) => {
 
   const totalPages = Math.ceil(state.products.length / state.pagination.itemsPerPage);
 
-  // upload art functionality
-  const handleUploadButtonClick = async (event) => {
-    //stop the form from refreshing the page
-    event.preventDefault();
-
-    // Simulate an upload and set details
-    const data = {
-      uploadedDescription: "Sample description",
-      uploadedArtistName: "Sample artist name",
-      uploadedPricing: "Sample pricing",
-    };
-
-    dispatch({
-      type: "SET_DETAILS",
-      payload: data,
-    });
-
-    // Save the data to the backend whenever description, artistName, or pricing changes
-    useEffect(async () => {
-      await saveDataToBackend({
-        description: data.uploadedDescription,
-        artistName: data.uploadedArtistName,
-        pricing: data.uploadedPricing,
-      });
-      if (isUploadSuccess) {
-        dispatch({ type: "UPLOAD_TO_SERVER_SUCCESS" });
-      } else {
-        // Handle upload failure, if needed
-      }
-    }, [description, artistName, pricing]);
+ 
+ 
+  const contextValue = {
+    state: state,
+    dispatch: dispatch,
   };
 
   return (
-    <UserContext.Provider
-      value={{
-        state,
-        dispatch,
-        getProductById,
-        getAllProducts,
-        saveDataToBackend,
-        handleUploadButtonClick,
-      }}
-    >
+    <UserContext.Provider value={contextValue}>
       {children}
     </UserContext.Provider>
-  );
+    )
 };
 
 export const useUser = () => {
   const context = useContext(UserContext);
-  // if (!context) {
-  //  throw new Error('useUser must be used within a UserProvider');
-  // }
+   if (!context) {
+    throw new Error('useUser must be used within a UserContext');
+   }
   return context;
 };
 
-// AppContext.js
-// import React, { createContext, useReducer, useContext } from 'react';
 
-// // Initial state for the app
-// const initialState = {
-//   step1Data: { name: '', email: '' },
-//   step2Data: { address: '', city: '' },
-//   step3Images: [],
-// };
-
-// // Reducer function to update state based on actions
-// const reducer = (state, action) => {
-//   switch (action.type) {
-//     case 'SET_STEP1_DATA':
-//       return { ...state, step1Data: action.payload };
-//     case 'SET_STEP2_DATA':
-//       return { ...state, step2Data: action.payload };
-//     case 'SET_STEP3_IMAGES':
-//       return { ...state, step3Images: action.payload };
-//     default:
-//       return state;
-//   }
-// };
-
-// // Create the context
-// const AppContext = createContext();
-
-// // Create the provider to wrap the app with
-// const AppProvider = ({ children }) => {
-//   const [state, dispatch] = useReducer(reducer, initialState);
-
-//   return (
-//     <AppContext.Provider value={{ state, dispatch }}>
-//       {children}
-//     </AppContext.Provider>
-//   );
-// };
-
-// // Custom hook to use the app context
-// const useAppContext = () => {
-//   const context = useContext(AppContext);
-//   if (!context) {
-//     throw new Error('useAppContext must be used within an AppProvider');
-//   }
-//   return context;
-// };
-
-// export { AppProvider, useAppContext };

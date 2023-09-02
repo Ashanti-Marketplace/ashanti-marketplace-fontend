@@ -259,7 +259,36 @@ export default Step3;
 
 
 
+// const handleUploadButtonClick = async (event) => {
+//   //stop the form from refreshing the page
+//   event.preventDefault();
 
+//   // Simulate an upload and set details
+//   const data = {
+//     uploadedDescription: "Sample description",
+//     uploadedArtistName: "Sample artist name",
+//     uploadedPricing: "Sample pricing",
+//   };
+
+//   dispatch({
+//     type: "SET_DETAILS",
+//     payload: data,
+//   });
+
+//   // Save the data to the backend whenever description, artistName, or pricing changes
+//   useEffect(async () => {
+//     await saveDataToBackend({
+//       description: data.uploadedDescription,
+//       artistName: data.uploadedArtistName,
+//       pricing: data.uploadedPricing,
+//     });
+//     if (isUploadSuccess) {
+//       dispatch({ type: "UPLOAD_TO_SERVER_SUCCESS" });
+//     } else {
+//       // Handle upload failure, if needed
+//     }
+//   }, [description, artistName, pricing]);
+// };
 
 
 
@@ -406,3 +435,20 @@ export default Step3;
 
 
 
+//const saveDataToBackend = async (data) => {
+  try {
+    // Assuming the backend API URL is '/api/saveData'
+    await fetch("/api/saveData", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    return true; // Return true on successful upload
+  } catch (error) {
+    console.error("Error while saving data to the backend:", error);
+    return false; // Return false on upload failure
+  }
+// };

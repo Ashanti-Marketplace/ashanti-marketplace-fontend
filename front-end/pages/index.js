@@ -1,7 +1,9 @@
 import Link from "next/link";
 import styles from "../styles/homePage.module.css";
 import Layout from "../components/layout";
+import { useUser } from "../utils/contexts/userContext";
 const Home = (home) => {
+ 
   return (
   <Layout home>
       <div className={styles.featured}>Featured</div>
