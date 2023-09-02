@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
     const authCode = localStorage.getItem('loggedIn'); //retrieve auth code from local storage
 
     //redirect to login page if not authentivated and the route requires authentication
-    if(!authCode == true && !excludedPages.includes(router.pathname)){
+    if(!authCode === true && !excludedPages.includes(router.pathname)){
       alert('please login ')
       router.push('/login')
     }
